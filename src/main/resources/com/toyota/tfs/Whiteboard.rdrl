@@ -1,0 +1,9 @@
+package com.toyota.tfs;
+
+import java.lang.Number;
+
+rule "Whiteboard"
+	dialect "mvel"
+	when
+	then
+end
