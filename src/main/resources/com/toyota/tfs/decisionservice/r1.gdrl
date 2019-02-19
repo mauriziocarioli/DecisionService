@@ -1,2 +1,4 @@
 package com.toyota.tfs.decisionservice;
 
+global java.lang.Double r1;
+global java.lang.Double r2;
