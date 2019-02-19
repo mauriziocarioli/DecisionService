@@ -4,9 +4,19 @@ import com.opencsv.bean.CsvBindByName;
 
 public class AccountHolder {
 
+	//added following for Machine Learning options
+	private String treatmentOutcome;
+	
+	
+	//added the following values for the fuse process
+	private String corrrelationID;
+	private int splitCount;
+	private int splitIndex;
+	private String errorMessage;
+	
+	
 	
 	//These getters and members added by me to cover the rules -- goes down to next comment
-	private String callList;
 	public String getCallList() {
 		return callList;
 	}
@@ -54,13 +64,15 @@ public class AccountHolder {
 	public void setRisk_score(String risk_score) {
 		this.risk_score = risk_score;
 	}
-
+	
+	//added for rules processing
+	private String callList;
 	private String mismatch;
 	private String currentStage;
 	private String prob;
 	private String BAR;
 	private String risk_score;
-	
+	private String skip_ID;
 	// End of custom process getters and setters and class data members not part of original csv file
 	
 	public String getID() {
@@ -1723,5 +1735,55 @@ public class AccountHolder {
 	
 	@CsvBindByName
 	private String Aflag;
+
+
+
+	public String getTreatmentOutcome() {
+		return treatmentOutcome;
+	}
+
+	public void setTreatmentOutcome(String treatmentOutcome) {
+		this.treatmentOutcome = treatmentOutcome;
+	}
+
+	public String getCorrrelationID() {
+		return corrrelationID;
+	}
+
+	public void setCorrrelationID(String corrrelationID) {
+		this.corrrelationID = corrrelationID;
+	}
+
+	public int getSplitCount() {
+		return splitCount;
+	}
+
+	public void setSplitCount(int splitCount) {
+		this.splitCount = splitCount;
+	}
+
+	public int getSplitIndex() {
+		return splitIndex;
+	}
+
+	public void setSplitIndex(int splitIndex) {
+		this.splitIndex = splitIndex;
+	}
+
+	public String getErrorMessage() {
+		return errorMessage;
+	}
+
+	public void setErrorMessage(String errorMessage) {
+		this.errorMessage = errorMessage;
+	}
+
+	public String getSkip_ID() {
+		return skip_ID;
+	}
+
+	public void setSkip_ID(String skip_ID) {
+		this.skip_ID = skip_ID;
+	}
 
 }
