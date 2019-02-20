@@ -29,29 +29,37 @@
           <factAlias>Scenario description</factAlias>
         </FactMapping>
         <FactMapping>
-          <expressionElements/>
+          <expressionElements>
+            <ExpressionElement>
+              <step>aflag</step>
+            </ExpressionElement>
+          </expressionElements>
           <expressionIdentifier>
             <name>0|1</name>
             <type>GIVEN</type>
           </expressionIdentifier>
           <factIdentifier>
-            <name>Empty</name>
-            <className>java.lang.Void</className>
+            <name>0|1</name>
+            <className>com.toyota.tfs.AccountHolder</className>
           </factIdentifier>
-          <className>java.lang.Void</className>
-          <factAlias>INSTANCE 1</factAlias>
-          <expressionAlias>PROPERTY 1</expressionAlias>
+          <className>java.lang.String</className>
+          <factAlias>AccountHolder</factAlias>
+          <expressionAlias>aflag</expressionAlias>
         </FactMapping>
         <FactMapping>
-          <expressionElements/>
+          <expressionElements>
+            <ExpressionElement>
+              <step>callList</step>
+            </ExpressionElement>
+          </expressionElements>
           <expressionIdentifier>
             <name>0|2</name>
             <type>EXPECTED</type>
           </expressionIdentifier>
           <factIdentifier reference="../../FactMapping[3]/factIdentifier"/>
-          <className>java.lang.Void</className>
-          <factAlias>INSTANCE 2</factAlias>
-          <expressionAlias>PROPERTY 2</expressionAlias>
+          <className>java.lang.String</className>
+          <factAlias>AccountHolder</factAlias>
+          <expressionAlias>callList</expressionAlias>
         </FactMapping>
       </factMappings>
     </simulationDescriptor>
@@ -61,14 +69,22 @@
           <FactMappingValue>
             <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[2]/factIdentifier"/>
             <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[2]/expressionIdentifier"/>
+            <rawValue class="string">AFLAG</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping/factIdentifier"/>
+            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping/expressionIdentifier"/>
+            <rawValue class="string">1</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
             <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/expressionIdentifier"/>
+            <rawValue class="string">Y</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
             <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[4]/expressionIdentifier"/>
+            <rawValue class="string">N</rawValue>
           </FactMappingValue>
         </factMappingValues>
         <simulationDescriptor reference="../../../simulationDescriptor"/>
@@ -76,6 +92,10 @@
     </scenarios>
   </simulation>
   <imports>
-    <imports/>
+    <imports>
+      <Import>
+        <type>com.toyota.tfs.AccountHolder</type>
+      </Import>
+    </imports>
   </imports>
 </ScenarioSimulationModel>
