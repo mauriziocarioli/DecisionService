@@ -1,0 +1,9 @@
+package com.toyota.tfs.decisionservice;
+
+import java.lang.Number;
+
+rule "Early Stage with Low Balance"
+	dialect "mvel"
+	when
+	then
+end
