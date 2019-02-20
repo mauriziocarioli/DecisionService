@@ -1,9 +1,11 @@
 package com.toyota.tfs.decisionservice;
 
 import java.lang.Number;
+import com.toyota.tfs.AccountHolder;
 
 rule "Early Stage with Low Balance"
 	dialect "mvel"
 	when
+		AccountHolder( BALANCE < "2500" )
 	then
 end
