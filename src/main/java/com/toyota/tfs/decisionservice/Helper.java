@@ -6,12 +6,35 @@ package com.toyota.tfs.decisionservice;
 
 public class Helper implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Helper() {
-    }
+	@org.kie.api.definition.type.Description(value = "random number used in early stage business rules")
+	private double rand1;
+	@org.kie.api.definition.type.Description(value = "random number used for load balancing")
+	private double rand2;
 
+	public Helper() {
+	}
 
+	public double getRand1() {
+		return this.rand1;
+	}
 
+	public void setRand1(double rand1) {
+		this.rand1 = rand1;
+	}
+
+	public double getRand2() {
+		return this.rand2;
+	}
+
+	public void setRand2(double rand2) {
+		this.rand2 = rand2;
+	}
+
+	public Helper(double rand1, double rand2) {
+		this.rand1 = rand1;
+		this.rand2 = rand2;
+	}
 
 }
