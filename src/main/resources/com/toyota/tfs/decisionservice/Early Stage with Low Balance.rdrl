@@ -6,6 +6,6 @@ import com.toyota.tfs.AccountHolder;
 rule "Early Stage with Low Balance"
 	dialect "mvel"
 	when
-		AccountHolder( BALANCE < "2500" )
+		a : AccountHolder( BALANCE < "2500" )
 	then
 end
