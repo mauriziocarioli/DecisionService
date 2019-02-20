@@ -1,5 +1,5 @@
 <scenario>
-  <name>Test Early Stage lower bound.scenario</name>
+  <name>Test Early Stage below bound.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
@@ -8,7 +8,7 @@
       <fieldData>
         <field-data>
           <name>daysDelinquent</name>
-          <value>12</value>
+          <value>11</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -16,15 +16,15 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>177</executionTimeResult>
-      <numberOfRulesFired>1</numberOfRulesFired>
+      <executionTimeResult>104</executionTimeResult>
+      <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
       <ruleName>Row 1 Account Stages</ruleName>
-      <expectedCount>1</expectedCount>
-      <explanation>Rule [Row 1 Account Stages] activated 1 times.</explanation>
+      <explanation>Rule [Row 1 Account Stages] was not activated.</explanation>
+      <expectedFire>false</expectedFire>
       <successResult>true</successResult>
-      <actualResult>1</actualResult>
+      <actualResult>0</actualResult>
     </expect-rule>
     <expect-fact>
       <fieldValues>
@@ -32,8 +32,8 @@
           <fieldName>currentStage</fieldName>
           <expected>early</expected>
           <successResult>true</successResult>
-          <explanation>[account] field [currentStage] was [early].</explanation>
-          <operator>==</operator>
+          <explanation>[account] field [currentStage] was not [early].</explanation>
+          <operator>!=</operator>
           <nature>1</nature>
         </expect-field>
       </fieldValues>
@@ -41,7 +41,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2019-02-20 18:55:53.232 UTC</lastRunResult>
+  <lastRunResult>2019-02-20 18:58:03.429 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.toyota.tfs.decisionservice</packageName>
