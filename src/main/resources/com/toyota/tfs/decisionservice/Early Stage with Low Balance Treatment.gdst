@@ -24,7 +24,7 @@
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
           <width>100</width>
-          <header>Balance</header>
+          <header>Balance &lt;</header>
           <constraintValueType>1</constraintValueType>
           <factField>BALANCE</factField>
           <fieldType>String</fieldType>
