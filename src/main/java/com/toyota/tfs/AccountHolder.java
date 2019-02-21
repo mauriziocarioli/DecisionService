@@ -1178,14 +1178,6 @@ public class AccountHolder {
 		DELQ_MAX = dELQ_MAX;
 	}
 
-	public String getDaysDelinquent() {
-		return DaysDelinquent;
-	}
-
-	public void setDaysDelinquent(String daysDelinquent) {
-		DaysDelinquent = daysDelinquent;
-	}
-
 	public String getBad_Number() {
 		return Bad_Number;
 	}
@@ -1692,7 +1684,7 @@ public class AccountHolder {
 	private String DELQ_MAX;
 
 	// @CsvBindByName
-	private String DaysDelinquent;
+	private Integer DaysDelinquent;
 
 	// @CsvBindByName
 	private String Bad_Number;
@@ -1784,6 +1776,14 @@ public class AccountHolder {
 	}
 
 	public AccountHolder() {
+	}
+
+	public java.lang.Integer getDaysDelinquent() {
+		return this.DaysDelinquent;
+	}
+
+	public void setDaysDelinquent(java.lang.Integer DaysDelinquent) {
+		this.DaysDelinquent = DaysDelinquent;
 	}
 
 }
