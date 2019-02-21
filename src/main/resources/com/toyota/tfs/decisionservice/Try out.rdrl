@@ -1,0 +1,9 @@
+package com.toyota.tfs.decisionservice;
+
+import java.lang.Number;
+
+rule "Try out"
+	dialect "mvel"
+	when
+	then
+end
