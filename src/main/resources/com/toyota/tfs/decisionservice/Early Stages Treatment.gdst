@@ -126,11 +126,7 @@
     <entries/>
   </auditLog>
   <imports>
-    <imports>
-      <org.kie.soup.project.datamodel.imports.Import>
-        <type>com.toyota.tfs.AccountHolder</type>
-      </org.kie.soup.project.datamodel.imports.Import>
-    </imports>
+    <imports/>
   </imports>
   <packageName>com.toyota.tfs.decisionservice</packageName>
   <tableFormat>EXTENDED_ENTRY</tableFormat>
