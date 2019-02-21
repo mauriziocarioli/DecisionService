@@ -97,6 +97,20 @@
       <type>String</type>
       <update>false</update>
     </set-field-col52>
+    <set-field-col52>
+      <typedDefaultValue>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </typedDefaultValue>
+      <hideColumn>false</hideColumn>
+      <width>100</width>
+      <header>Treatment</header>
+      <boundName>a</boundName>
+      <factField>treatmentOutcome</factField>
+      <type>String</type>
+      <update>false</update>
+    </set-field-col52>
   </actionCols>
   <auditLog>
     <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
@@ -169,6 +183,11 @@
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
+      <value>
+        <valueString>virtual</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
     </list>
     <list>
       <value>
@@ -200,6 +219,11 @@
       </value>
       <value>
         <valueString>0002</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>virtual</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
