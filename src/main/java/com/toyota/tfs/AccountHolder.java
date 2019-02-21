@@ -4,19 +4,17 @@ package com.toyota.tfs;
 
 public class AccountHolder {
 
-	//added following for Machine Learning options
+	// added following for Machine Learning options
 	private String treatmentOutcome;
-	
-	
-	//added the following values for the fuse process
+
+	// added the following values for the fuse process
 	private String corrrelationID;
 	private int splitCount;
 	private int splitIndex;
 	private String errorMessage;
-	
-	
-	
-	//These getters and members added by me to cover the rules -- goes down to next comment
+
+	// These getters and members added by me to cover the rules -- goes down to
+	// next comment
 	public String getCallList() {
 		return callList;
 	}
@@ -64,8 +62,8 @@ public class AccountHolder {
 	public void setRisk_score(String risk_score) {
 		this.risk_score = risk_score;
 	}
-	
-	//added for rules processing
+
+	// added for rules processing
 	private String callList;
 	private String mismatch;
 	private String currentStage;
@@ -73,8 +71,9 @@ public class AccountHolder {
 	private String BAR;
 	private String risk_score;
 	private String skip_ID;
-	// End of custom process getters and setters and class data members not part of original csv file
-	
+	// End of custom process getters and setters and class data members not part
+	// of original csv file
+
 	public String getID() {
 		return ID;
 	}
@@ -121,14 +120,6 @@ public class AccountHolder {
 
 	public void setGross_Due_Amount(String gross_Due_Amount) {
 		Gross_Due_Amount = gross_Due_Amount;
-	}
-
-	public String getBALANCE() {
-		return BALANCE;
-	}
-
-	public void setBALANCE(String bALANCE) {
-		BALANCE = bALANCE;
 	}
 
 	public String getRegion() {
@@ -1283,460 +1274,458 @@ public class AccountHolder {
 		Aflag = aflag;
 	}
 
-	//@CsvBindByName
+	// @CsvBindByName
 	private String ID;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Act_DT_1;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Act_DT_2;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Act_DT_3;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Is_Active;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Gross_Due_Amount;
-	
-	//@CsvBindByName
-	private String BALANCE;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
+	private Double BALANCE;
+
+	// @CsvBindByName
 	private String Region;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Bflag;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Bflag_Processed;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Bat_DT;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Posting_Status;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Closed_Date;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Grade;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Region_Code;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Rate;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Dcode;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Disc_Rate;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Term_Count;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Score;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Ephone;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Insert_DT;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Count30;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Count60;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Count90;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String HOME_IS_MOBILE;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String HNFlag;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Hphone;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String HOME_PHONE_OWNERSHIP;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String LANGUAGE_PREFERENCE;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Entry_DT;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Ext_DT;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String LC_DT;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String LC1;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String LIST_1;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String List_Region_1;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String LIST_STATUS_1;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String MATURITY_DATE;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Mflag;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String MNFlag;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String MOBILE_PHONE;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String MOBILE_PHONE_OWNERSHIP;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Payment_Count;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Payment_Due_Count;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Next_DT;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Payment_Paid_Count;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Payment_Left_Count;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String UA4;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String UA7;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Oind;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String U_Amount_Due;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String OFlag;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String PAYOFF_AMOUNT;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String P_D_Date;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Processing_Date;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String P_D_Date_1;
 
-	//@CsvBindByName
+	// @CsvBindByName
 	private String PD30_Count;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String PD60_Count;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String PD90_Count;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String RCflag;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Rcode;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Rflag;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String SPECIAL_HANDLING_FLAG;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String SC1;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String SS1;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String SAS2;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String STATE;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String RT5;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String TIME_ZONE_IND;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String TOT_MNTHS_EXT_12MNTH;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String TOT_MNTHS_EXT_6MNTH;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String TOT_TIMES_EXT_12MNTH;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String TOT_TIMES_EXT_6MNTH;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String TYPE;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String UA10;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String UM2;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String WORK_IS_MOBILE;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String WNFlag;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String WORK_PHONE_OWNERSHIP;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String ZIP;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3000;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3224;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3579;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3863;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3329;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3237;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3580;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3865;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3116;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3986;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String AM201TOT;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA_3001;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA_3100;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA_3109;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA_3123;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA_3148;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA_3207;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA_3273;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA_3536;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA_3913;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA_3857;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA_3938;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3002;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3203;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3215;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3217;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3235;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3268;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3333;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3535;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3747;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3835;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3854;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3871;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3872;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3969;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3546;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3843;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3844;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3873;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3895;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3994;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA3120;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA_3135;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA_3376;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA_3862;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA_3124;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA_3164;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String CMA_3159;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String AT01;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Pscore;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String PRAT;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Aratio;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String LT_CHRG_BAL_AMT;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Extns;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Ndate;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Oterm_Count;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String PERIODS_EXTENDED;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String DELQ_MAX;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String DaysDelinquent;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Bad_Number;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String BL_FLAG;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String DAFlag;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Eflag;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String LS_FLAG;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Nflag;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String NO_CONTACT;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String PST_Home_Area_Flag;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String SB;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Sflag;
-	
-	//@CsvBindByName
+
+	// @CsvBindByName
 	private String Aflag;
-
-
 
 	public String getTreatmentOutcome() {
 		return treatmentOutcome;
@@ -1784,6 +1773,17 @@ public class AccountHolder {
 
 	public void setSkip_ID(String skip_ID) {
 		this.skip_ID = skip_ID;
+	}
+
+	public java.lang.Double getBALANCE() {
+		return this.BALANCE;
+	}
+
+	public void setBALANCE(java.lang.Double BALANCE) {
+		this.BALANCE = BALANCE;
+	}
+
+	public AccountHolder() {
 	}
 
 }
