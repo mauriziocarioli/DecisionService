@@ -51,7 +51,7 @@
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
           <width>100</width>
-          <header>draw 1</header>
+          <header>chance 1</header>
           <constraintValueType>1</constraintValueType>
           <factField>rand2</factField>
           <fieldType>Double</fieldType>
@@ -67,7 +67,7 @@
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
           <width>100</width>
-          <header>draw 2</header>
+          <header>chance 2</header>
           <constraintValueType>1</constraintValueType>
           <factField>rand2</factField>
           <fieldType>Double</fieldType>
