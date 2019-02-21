@@ -39,7 +39,7 @@
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
           <width>100</width>
-          <header>min BAR</header>
+          <header>BAR &gt;=</header>
           <constraintValueType>1</constraintValueType>
           <factField>BAR</factField>
           <fieldType>Double</fieldType>
@@ -54,7 +54,7 @@
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
           <width>100</width>
-          <header>max BAR</header>
+          <header>BAR &lt;</header>
           <constraintValueType>1</constraintValueType>
           <factField>BAR</factField>
           <fieldType>Double</fieldType>
