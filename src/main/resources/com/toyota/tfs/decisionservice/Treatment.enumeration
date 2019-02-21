@@ -1,2 +1,2 @@
-'AccountHolder.treatmentOutcome' : ['Text/Email','Virtual','Predictive','Managed','Ownership']
+'AccountHolder.treatmentOutcome' : ['Text/Email','Virtual','Predictive','Managed','Ownership','A','B']
 'AccountHolder.currentStage' : ['Early','Mid','Late']
