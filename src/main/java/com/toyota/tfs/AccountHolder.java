@@ -47,14 +47,6 @@ public class AccountHolder {
 		this.prob = prob;
 	}
 
-	public String getBAR() {
-		return BAR;
-	}
-
-	public void setBAR(String bAR) {
-		BAR = bAR;
-	}
-
 	public String getRisk_score() {
 		return risk_score;
 	}
@@ -68,7 +60,7 @@ public class AccountHolder {
 	private String mismatch;
 	private String currentStage;
 	private String prob;
-	private String BAR;
+	private Double BAR;
 	private String risk_score;
 	private String skip_ID;
 	// End of custom process getters and setters and class data members not part
@@ -1784,6 +1776,14 @@ public class AccountHolder {
 
 	public void setDaysDelinquent(java.lang.Integer DaysDelinquent) {
 		this.DaysDelinquent = DaysDelinquent;
+	}
+
+	public java.lang.Double getBAR() {
+		return this.BAR;
+	}
+
+	public void setBAR(java.lang.Double BAR) {
+		this.BAR = BAR;
 	}
 
 }
