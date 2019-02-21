@@ -24,11 +24,11 @@
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
           <width>100</width>
-          <header>Balance</header>
+          <header>Balance &gt;=</header>
           <constraintValueType>1</constraintValueType>
           <factField>BALANCE</factField>
           <fieldType>String</fieldType>
-          <operator>&lt;</operator>
+          <operator>&gt;=</operator>
           <parameters/>
           <binding></binding>
         </condition-column52>
@@ -51,11 +51,11 @@
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
           <width>100</width>
-          <header>chance 1</header>
+          <header>min draw</header>
           <constraintValueType>1</constraintValueType>
           <factField>rand2</factField>
           <fieldType>Double</fieldType>
-          <operator>&lt;</operator>
+          <operator>&gt;=</operator>
           <parameters/>
           <binding></binding>
         </condition-column52>
@@ -67,11 +67,11 @@
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
           <width>100</width>
-          <header>chance 2</header>
+          <header>max draw</header>
           <constraintValueType>1</constraintValueType>
           <factField>rand2</factField>
           <fieldType>Double</fieldType>
-          <operator>&gt;=</operator>
+          <operator>&lt;</operator>
           <parameters/>
           <binding></binding>
         </condition-column52>
@@ -83,20 +83,6 @@
     </Pattern52>
   </conditionPatterns>
   <actionCols>
-    <set-field-col52>
-      <typedDefaultValue>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </typedDefaultValue>
-      <hideColumn>false</hideColumn>
-      <width>100</width>
-      <header>List</header>
-      <boundName>a</boundName>
-      <factField>LIST_1</factField>
-      <type>String</type>
-      <update>true</update>
-    </set-field-col52>
     <set-field-col52>
       <typedDefaultValue>
         <valueString></valueString>
@@ -153,6 +139,7 @@
     <list>
       <value>
         <valueNumeric class="int">1</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -167,19 +154,15 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueNumeric class="double">0.5</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_DOUBLE</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>NUMERIC_DOUBLE</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>0001</valueString>
-        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -191,6 +174,7 @@
     <list>
       <value>
         <valueNumeric class="int">2</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -205,19 +189,15 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
-        <dataType>NUMERIC_DOUBLE</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueNumeric class="double">0.5</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0002</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">1.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
