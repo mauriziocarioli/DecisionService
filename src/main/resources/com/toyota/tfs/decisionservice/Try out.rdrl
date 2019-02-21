@@ -1,9 +1,14 @@
 package com.toyota.tfs.decisionservice;
 
 import java.lang.Number;
+import com.toyota.tfs.AccountHolder;
 
 rule "Try out"
 	dialect "mvel"
 	when
+		a : AccountHolder( BALANCE < "2500" )
 	then
+		modify( a ) {
+				setTreatmentOutcome( "virtual" )
+		}
 end
