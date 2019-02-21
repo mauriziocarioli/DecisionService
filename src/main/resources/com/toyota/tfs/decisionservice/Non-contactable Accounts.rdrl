@@ -1,8 +1,5 @@
 package com.toyota.tfs.decisionservice;
 
-import java.lang.Number;
-import com.toyota.tfs.AccountHolder;
-
 rule "Non-contactable Accounts"
 	dialect "mvel"
 	when
