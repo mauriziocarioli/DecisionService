@@ -1,1 +1,2 @@
-'com.toyota.tfs.AccountHolder.treatmentOutcome' : ['Text/Email','Virtual','Predictive','Managed','Ownership']
+'AccountHolder.treatmentOutcome' : ['Text/Email','Virtual','Predictive','Managed','Ownership']
+'AccountHolder.currentStage' : ['Early','Mid','Late']
