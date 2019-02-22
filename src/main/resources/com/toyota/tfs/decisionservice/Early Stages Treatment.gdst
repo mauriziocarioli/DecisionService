@@ -307,7 +307,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>A</valueString>
+        <valueString>Managed</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
