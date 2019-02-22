@@ -3,7 +3,7 @@ package com.toyota.tfs.decisionservice;
 rule "Late Stage 2"
 	dialect "mvel"
 	when
-		a : AccountHolder( currentStage == "Late" , rflag != "R" , BALANCE >= 1500 , LIST_1 < "1550" || LIST_1 > "1795" )
+		a : AccountHolder( currentStage == "Late" , rflag != "R" , BALANCE >= 1500 , LIST_1 > "1587" , LIST_1 < "1750" )
 		h : Helper( )
 	then
 		modify( a ) {
