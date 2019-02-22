@@ -49,21 +49,13 @@ public class AccountHolder {
 		this.prob = prob;
 	}
 
-	public String getRisk_score() {
-		return risk_score;
-	}
-
-	public void setRisk_score(String risk_score) {
-		this.risk_score = risk_score;
-	}
-
 	// added for rules processing
 	private String callList;
 	private String mismatch;
 	private String currentStage;
 	private String prob;
 	private Double BAR;
-	private String risk_score;
+	private Double risk_score;
 	private String skip_ID;
 	// End of custom process getters and setters and class data members not part
 	// of original csv file
@@ -1794,6 +1786,14 @@ public class AccountHolder {
 
 	public void setRisk_level(java.lang.String risk_level) {
 		this.risk_level = risk_level;
+	}
+
+	public java.lang.Double getRisk_score() {
+		return this.risk_score;
+	}
+
+	public void setRisk_score(java.lang.Double risk_score) {
+		this.risk_score = risk_score;
 	}
 
 }
