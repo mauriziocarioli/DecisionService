@@ -13,6 +13,8 @@ public class AccountHolder {
 	private int splitIndex;
 	private String errorMessage;
 
+	private java.lang.String risk_level;
+
 	// These getters and members added by me to cover the rules -- goes down to
 	// next comment
 	public String getCallList() {
@@ -1784,6 +1786,14 @@ public class AccountHolder {
 
 	public void setBAR(java.lang.Double BAR) {
 		this.BAR = BAR;
+	}
+
+	public java.lang.String getRisk_level() {
+		return this.risk_level;
+	}
+
+	public void setRisk_level(java.lang.String risk_level) {
+		this.risk_level = risk_level;
 	}
 
 }
