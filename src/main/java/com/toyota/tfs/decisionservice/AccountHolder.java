@@ -13,8 +13,6 @@ public class AccountHolder {
 	private int splitIndex;
 	private String errorMessage;
 
-	private java.lang.String risk_level;
-
 	// These getters and members added by me to cover the rules -- goes down to
 	// next comment
 	public String getCallList() {
@@ -56,6 +54,7 @@ public class AccountHolder {
 	private String prob;
 	private Double BAR;
 	private Double risk_score;
+	private String risk_level;
 	private String skip_ID;
 	// End of custom process getters and setters and class data members not part
 	// of original csv file
@@ -1753,46 +1752,46 @@ public class AccountHolder {
 		this.skip_ID = skip_ID;
 	}
 
-	public java.lang.Double getBALANCE() {
+	public Double getBALANCE() {
 		return this.BALANCE;
 	}
 
-	public void setBALANCE(java.lang.Double BALANCE) {
+	public void setBALANCE(Double BALANCE) {
 		this.BALANCE = BALANCE;
 	}
 
 	public AccountHolder() {
 	}
 
-	public java.lang.Integer getDaysDelinquent() {
+	public Integer getDaysDelinquent() {
 		return this.DaysDelinquent;
 	}
 
-	public void setDaysDelinquent(java.lang.Integer DaysDelinquent) {
+	public void setDaysDelinquent(Integer DaysDelinquent) {
 		this.DaysDelinquent = DaysDelinquent;
 	}
 
-	public java.lang.Double getBAR() {
+	public Double getBAR() {
 		return this.BAR;
 	}
 
-	public void setBAR(java.lang.Double BAR) {
+	public void setBAR(Double BAR) {
 		this.BAR = BAR;
 	}
 
-	public java.lang.String getRisk_level() {
+	public String getRisk_level() {
 		return this.risk_level;
 	}
 
-	public void setRisk_level(java.lang.String risk_level) {
+	public void setRisk_level(String risk_level) {
 		this.risk_level = risk_level;
 	}
 
-	public java.lang.Double getRisk_score() {
+	public Double getRisk_score() {
 		return this.risk_score;
 	}
 
-	public void setRisk_score(java.lang.Double risk_score) {
+	public void setRisk_score(Double risk_score) {
 		this.risk_score = risk_score;
 	}
 
