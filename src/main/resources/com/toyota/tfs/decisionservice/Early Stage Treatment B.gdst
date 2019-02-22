@@ -2,11 +2,11 @@
   <tableName>Early Stage Treatment B</tableName>
   <rowNumberCol>
     <hideColumn>false</hideColumn>
-    <width>-1</width>
+    <width>50</width>
   </rowNumberCol>
   <descriptionCol>
     <hideColumn>false</hideColumn>
-    <width>-1</width>
+    <width>150</width>
   </descriptionCol>
   <metadataCols/>
   <attributeCols/>
@@ -23,7 +23,7 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>100</width>
           <header>Treatment</header>
           <constraintValueType>1</constraintValueType>
           <factField>treatmentOutcome</factField>
@@ -38,7 +38,7 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>100</width>
           <header>Balance &gt;=</header>
           <constraintValueType>1</constraintValueType>
           <factField>BALANCE</factField>
@@ -53,7 +53,7 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>100</width>
           <header>Balance &lt;</header>
           <constraintValueType>1</constraintValueType>
           <factField>BALANCE</factField>
@@ -68,11 +68,11 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>100</width>
           <header>Risk Score &gt;=</header>
           <constraintValueType>1</constraintValueType>
           <factField>risk_score</factField>
-          <fieldType>String</fieldType>
+          <fieldType>Double</fieldType>
           <operator>&gt;=</operator>
           <parameters/>
         </condition-column52>
@@ -83,11 +83,11 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>100</width>
           <header>Risk Score &lt;</header>
           <constraintValueType>1</constraintValueType>
           <factField>risk_score</factField>
-          <fieldType>String</fieldType>
+          <fieldType>Double</fieldType>
           <operator>&lt;</operator>
           <parameters/>
         </condition-column52>
@@ -105,7 +105,7 @@
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
       <hideColumn>false</hideColumn>
-      <width>-1</width>
+      <width>100</width>
       <header>Risk Level</header>
       <boundName>a</boundName>
       <factField>risk_level</factField>
@@ -119,7 +119,7 @@
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
       <hideColumn>false</hideColumn>
-      <width>-1</width>
+      <width>100</width>
       <header>Treatment</header>
       <boundName>a</boundName>
       <factField>treatmentOutcome</factField>
@@ -163,9 +163,38 @@
   <data>
     <list>
       <value>
-        <valueNumeric>1</valueNumeric>
+        <valueNumeric class="int">1</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>B</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="double">2500.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="double">10000.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
+      <value>
+        <valueNumeric class="double">0.345</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -178,42 +207,12 @@
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[2]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[3]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52[2]/typedDefaultValue"/>
     </list>
     <list>
       <value>
-        <valueNumeric>2</valueNumeric>
+        <valueNumeric class="int">2</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Virtual</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[2]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[3]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52[2]/typedDefaultValue"/>
-    </list>
-    <list>
-      <value>
-        <valueNumeric>3</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -222,7 +221,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Predictive</valueString>
+        <valueString>B</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -235,33 +234,9 @@
     </list>
     <list>
       <value>
-        <valueNumeric>4</valueNumeric>
+        <valueNumeric class="int">3</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Managed</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[2]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[3]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52[2]/typedDefaultValue"/>
-    </list>
-    <list>
-      <value>
-        <valueNumeric>5</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -270,7 +245,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Ownership</valueString>
+        <valueString>B</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -283,9 +258,9 @@
     </list>
     <list>
       <value>
-        <valueNumeric>6</valueNumeric>
+        <valueNumeric class="int">4</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -294,7 +269,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>A</valueString>
+        <valueString>B</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -307,9 +282,57 @@
     </list>
     <list>
       <value>
-        <valueNumeric>7</valueNumeric>
+        <valueNumeric class="int">5</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>B</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[2]/typedDefaultValue"/>
+      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[3]/typedDefaultValue"/>
+      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
+      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
+      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+      <value reference="../../../actionCols/set-field-col52[2]/typedDefaultValue"/>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">6</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>B</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[2]/typedDefaultValue"/>
+      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[3]/typedDefaultValue"/>
+      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
+      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
+      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+      <value reference="../../../actionCols/set-field-col52[2]/typedDefaultValue"/>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">7</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
