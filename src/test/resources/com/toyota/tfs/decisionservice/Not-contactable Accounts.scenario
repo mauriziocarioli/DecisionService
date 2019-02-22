@@ -46,11 +46,7 @@
   <inclusive>false</inclusive>
   <packageName>com.toyota.tfs.decisionservice</packageName>
   <imports>
-    <imports>
-      <org.kie.soup.project.datamodel.imports.Import>
-        <type>com.toyota.tfs.AccountHolder</type>
-      </org.kie.soup.project.datamodel.imports.Import>
-    </imports>
+    <imports/>
   </imports>
   <ksessions>
     <string>defaultKieSession</string>
