@@ -1,9 +1,10 @@
 package com.toyota.tfs.decisionservice;
 
-import java.lang.Number;
-
 rule "Late Stage"
 	dialect "mvel"
 	when
+		a : AccountHolder( currentStage == "Late" , rflag != "R" , BALANCE >= 1500 , LIST_1 < "1550" || LIST_1 > "1795" )
+		h : Helper( )
 	then
+		modify(a) { setLIST_1( h.getListID("1550","1587","1750","1795") ); }
 end
