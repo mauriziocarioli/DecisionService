@@ -6,6 +6,6 @@ rule "Non-contactable Accounts"
 		account : AccountHolder( aflag == "Y" || nflag == "Y" || eflag == "Y" || NO_CONTACT == "Y" || sflag == "Y" || bad_Number == "Y" || DAFlag == "Y" )
 	then
 		modify( account ) {
-				setCallList( "N" )
+				setTreatmentOutcome( "Do not contact" )
 		}
 end
