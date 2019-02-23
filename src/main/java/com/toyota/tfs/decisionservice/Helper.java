@@ -13,8 +13,6 @@ public class Helper implements java.io.Serializable {
 	private double rand1;
 	@org.kie.api.definition.type.Description(value = "random number in [0,1) used for load balancing ListId's of late stage accounts")
 	private double rand2;
-	@org.kie.api.definition.type.Description(value = "random ListID value")
-	private String listID;
 
 	public Helper() {
 	}
@@ -35,7 +33,7 @@ public class Helper implements java.io.Serializable {
 		this.rand2 = rand2;
 	}
 
-	public String getListID(String L1, String L2, String L3, String L4) {
+	public String randomListID(String L1, String L2, String L3, String L4) {
 		final long l1 = Long.parseLong(L1);
 		final long l2 = Long.parseLong(L2);
 		final long l3 = Long.parseLong(L3);
