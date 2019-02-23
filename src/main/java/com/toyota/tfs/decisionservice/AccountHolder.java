@@ -55,7 +55,7 @@ public class AccountHolder {
 	private Double BAR;
 	private Double risk_score;
 	private String risk_level;
-	private String skip_ID;
+	private Integer skip_ID;
 	// End of custom process getters and setters and class data members not part
 	// of original csv file
 
@@ -1744,14 +1744,6 @@ public class AccountHolder {
 		this.errorMessage = errorMessage;
 	}
 
-	public String getSkip_ID() {
-		return skip_ID;
-	}
-
-	public void setSkip_ID(String skip_ID) {
-		this.skip_ID = skip_ID;
-	}
-
 	public Double getBALANCE() {
 		return this.BALANCE;
 	}
@@ -1793,6 +1785,14 @@ public class AccountHolder {
 
 	public void setRisk_score(Double risk_score) {
 		this.risk_score = risk_score;
+	}
+
+	public java.lang.Integer getSkip_ID() {
+		return this.skip_ID;
+	}
+
+	public void setSkip_ID(java.lang.Integer skip_ID) {
+		this.skip_ID = skip_ID;
 	}
 
 }
