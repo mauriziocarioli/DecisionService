@@ -1,0 +1,20 @@
+<org.uberfire.java.nio.base.Properties serialization="custom">
+  <unserializable-parents/>
+  <map>
+    <default>
+      <loadFactor>0.75</loadFactor>
+      <threshold>12</threshold>
+    </default>
+    <int>16</int>
+    <int>1</int>
+    <string>dcore.description[0]</string>
+    <string>SLIDE 16-17
+Use the calculated values of Risk_Score in the Mid stage account rules as mentioned further
+Rule 1: Accounts identified high risk skip accounts will be assigned to the ?owned? treatment. High risk skip accounts are
+Risk_Score is &gt;=5.69
+Skip_ID &gt;= 800
+Rule 2: Remaining mid stage accounts will be assigned to a ?managed? treatment,
+
+</string>
+  </map>
+</org.uberfire.java.nio.base.Properties>
