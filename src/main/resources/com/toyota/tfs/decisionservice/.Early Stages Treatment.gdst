@@ -1,0 +1,18 @@
+<org.uberfire.java.nio.base.Properties serialization="custom">
+  <unserializable-parents/>
+  <map>
+    <default>
+      <loadFactor>0.75</loadFactor>
+      <threshold>12</threshold>
+    </default>
+    <int>16</int>
+    <int>1</int>
+    <string>dcore.description[0]</string>
+    <string>SLIDE 10
+The remaining accounts will be distributed in the following fashion:
+Rule 2: 20% are to be randomly assigned treatments of:  Text/email, virtual, predictive, managed, ownership
+Rule 3: 40% treatment A (Deck 11)
+Rule 4: 40% treatment B (Deck 12)
+</string>
+  </map>
+</org.uberfire.java.nio.base.Properties>
