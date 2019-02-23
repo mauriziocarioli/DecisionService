@@ -9,4 +9,5 @@ rule "Late Stage 2"
 		modify( a ) {
 				setLIST_1( h.getListID("1550","1587","1750","1795") )
 		}
+		System.out.println("===> DecisionService: firing rule "+drools.getRule().getName());
 end
