@@ -2,11 +2,11 @@
   <tableName>Remaining Accounts Lists</tableName>
   <rowNumberCol>
     <hideColumn>false</hideColumn>
-    <width>-1</width>
+    <width>50</width>
   </rowNumberCol>
   <descriptionCol>
     <hideColumn>false</hideColumn>
-    <width>-1</width>
+    <width>150</width>
   </descriptionCol>
   <metadataCols/>
   <attributeCols/>
@@ -23,67 +23,7 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>Stage 1</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>currentStage</factField>
-          <fieldType>String</fieldType>
-          <operator>!=</operator>
-          <parameters/>
-        </condition-column52>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString></valueString>
-            <dataType>STRING</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>Stage 2</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>currentStage</factField>
-          <fieldType>String</fieldType>
-          <operator>!=</operator>
-          <parameters/>
-        </condition-column52>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString></valueString>
-            <dataType>STRING</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>Stage 3</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>currentStage</factField>
-          <fieldType>String</fieldType>
-          <operator>!=</operator>
-          <parameters/>
-        </condition-column52>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString></valueString>
-            <dataType>STRING</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>List</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>LIST_1</factField>
-          <fieldType>String</fieldType>
-          <operator>== null</operator>
-          <parameters/>
-        </condition-column52>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString></valueString>
-            <dataType>STRING</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>100</width>
           <header>A flag</header>
           <constraintValueType>1</constraintValueType>
           <factField>aflag</factField>
@@ -98,7 +38,7 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>100</width>
           <header>E flag</header>
           <constraintValueType>1</constraintValueType>
           <factField>eflag</factField>
@@ -113,7 +53,7 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>100</width>
           <header>N flag</header>
           <constraintValueType>1</constraintValueType>
           <factField>nflag</factField>
@@ -125,7 +65,74 @@
       <window>
         <parameters/>
       </window>
+      <entryPointName></entryPointName>
     </Pattern52>
+    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>Unassigned</header>
+      <constraintValueType>1</constraintValueType>
+      <parameters/>
+      <definition>
+        <org.drools.workbench.models.datamodel.rule.FactPattern>
+          <constraintList>
+            <constraints>
+              <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                <operator>== null</operator>
+                <constraintValueType>0</constraintValueType>
+                <expression>
+                  <parts/>
+                  <index>2147483647</index>
+                </expression>
+                <parameters/>
+                <factType>AccountHolder</factType>
+                <fieldName>LIST_1</fieldName>
+                <fieldType>String</fieldType>
+              </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+            </constraints>
+          </constraintList>
+          <factType>AccountHolder</factType>
+          <isNegated>false</isNegated>
+          <window>
+            <parameters/>
+          </window>
+        </org.drools.workbench.models.datamodel.rule.FactPattern>
+      </definition>
+      <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>Unassigned</header>
+          <constraintValueType>1</constraintValueType>
+          <fieldType>Boolean</fieldType>
+          <parameters/>
+          <varName></varName>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+      </childColumns>
+    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>Not in a Stage</header>
+      <constraintValueType>1</constraintValueType>
+      <parameters/>
+      <definition>
+        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
+          <text>AccountHolder( currentStage not in (&quot;Early&quot;,&quot;Mid&quot;,&quot;Late&quot;) )</text>
+        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
+      </definition>
+      <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>Not in a Stage</header>
+          <constraintValueType>1</constraintValueType>
+          <fieldType>Boolean</fieldType>
+          <parameters/>
+          <varName></varName>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+      </childColumns>
+    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
   </conditionPatterns>
   <actionCols>
     <set-field-col52>
@@ -135,13 +142,32 @@
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
       <hideColumn>false</hideColumn>
-      <width>-1</width>
+      <width>100</width>
       <header>List</header>
       <boundName>a</boundName>
       <factField>LIST_1</factField>
       <type>String</type>
       <update>true</update>
     </set-field-col52>
+    <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>log</header>
+      <definition>
+        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
+          <text>System.out.println(&quot;===&gt; DecisionService: firing rule &quot;+drools.getRule().getName());</text>
+        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
+      </definition>
+      <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>log</header>
+          <varName></varName>
+          <fieldType>Boolean</fieldType>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+      </childColumns>
+    </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
   </actionCols>
   <auditLog>
     <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
@@ -179,9 +205,9 @@
   <data>
     <list>
       <value>
-        <valueNumeric>1</valueNumeric>
+        <valueNumeric class="int">1</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -190,31 +216,45 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Early</valueString>
+        <valueString>Y</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Early</valueString>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[3]/typedDefaultValue"/>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>3000</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Early</valueString>
-        <dataType>STRING</dataType>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[6]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[7]/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
     </list>
     <list>
       <value>
-        <valueNumeric>2</valueNumeric>
+        <valueNumeric class="int">2</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -222,24 +262,50 @@
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
-      <value reference="../../list/value[3]"/>
-      <value reference="../../list/value[4]"/>
       <value>
-        <valueString>Mid</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[6]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[7]/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+      <value>
+        <valueString>Y</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>3001</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
     </list>
     <list>
       <value>
-        <valueNumeric>3</valueNumeric>
+        <valueNumeric class="int">3</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -247,182 +313,50 @@
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
-      <value reference="../../list/value[3]"/>
-      <value reference="../../list/value[4]"/>
       <value>
-        <valueString>Late</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[6]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[7]/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>Y</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>3002</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
     </list>
     <list>
       <value>
-        <valueNumeric>4</valueNumeric>
+        <valueNumeric class="int">4</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../list/value[3]"/>
-      <value>
-        <valueString>Mid</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Early</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[6]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[7]/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
-    </list>
-    <list>
-      <value>
-        <valueNumeric>5</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../list/value[3]"/>
-      <value reference="../../list[4]/value[4]"/>
-      <value>
-        <valueString>Mid</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[6]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[7]/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
-    </list>
-    <list>
-      <value>
-        <valueNumeric>6</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../list/value[3]"/>
-      <value reference="../../list[4]/value[4]"/>
-      <value>
-        <valueString>Late</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[6]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[7]/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
-    </list>
-    <list>
-      <value>
-        <valueNumeric>7</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../list/value[3]"/>
-      <value>
-        <valueString>Late</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Early</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[6]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[7]/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
-    </list>
-    <list>
-      <value>
-        <valueNumeric>8</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../list/value[3]"/>
-      <value reference="../../list[7]/value[4]"/>
-      <value>
-        <valueString>Mid</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[6]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[7]/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
-    </list>
-    <list>
-      <value>
-        <valueNumeric>9</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../list/value[3]"/>
-      <value reference="../../list[7]/value[4]"/>
-      <value>
-        <valueString>Late</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[6]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[7]/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
-    </list>
-    <list>
-      <value>
-        <valueNumeric>10</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -431,474 +365,43 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Mid</valueString>
+        <valueString>N</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Early</valueString>
+        <valueString>N</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Early</valueString>
+        <valueString>N</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[6]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[7]/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
-    </list>
-    <list>
       <value>
-        <valueNumeric>11</valueNumeric>
+        <valueBoolean>true</valueBoolean>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueBoolean>true</valueBoolean>
         <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>3003</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
-      <value reference="../../list[10]/value[3]"/>
-      <value reference="../../list[10]/value[4]"/>
       <value>
-        <valueString>Mid</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[6]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[7]/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
-    </list>
-    <list>
-      <value>
-        <valueNumeric>12</valueNumeric>
+        <valueBoolean>true</valueBoolean>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../list[10]/value[3]"/>
-      <value reference="../../list[10]/value[4]"/>
-      <value>
-        <valueString>Late</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[6]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[7]/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
-    </list>
-    <list>
-      <value>
-        <valueNumeric>13</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../list[10]/value[3]"/>
-      <value>
-        <valueString>Mid</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Early</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[6]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[7]/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
-    </list>
-    <list>
-      <value>
-        <valueNumeric>14</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../list[10]/value[3]"/>
-      <value reference="../../list[13]/value[4]"/>
-      <value>
-        <valueString>Mid</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[6]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[7]/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
-    </list>
-    <list>
-      <value>
-        <valueNumeric>15</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../list[10]/value[3]"/>
-      <value reference="../../list[13]/value[4]"/>
-      <value>
-        <valueString>Late</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[6]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[7]/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
-    </list>
-    <list>
-      <value>
-        <valueNumeric>16</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../list[10]/value[3]"/>
-      <value>
-        <valueString>Late</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Early</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[6]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[7]/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
-    </list>
-    <list>
-      <value>
-        <valueNumeric>17</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../list[10]/value[3]"/>
-      <value reference="../../list[16]/value[4]"/>
-      <value>
-        <valueString>Mid</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[6]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[7]/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
-    </list>
-    <list>
-      <value>
-        <valueNumeric>18</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../list[10]/value[3]"/>
-      <value reference="../../list[16]/value[4]"/>
-      <value>
-        <valueString>Late</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[6]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[7]/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
-    </list>
-    <list>
-      <value>
-        <valueNumeric>19</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Late</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Early</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Early</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[6]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[7]/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
-    </list>
-    <list>
-      <value>
-        <valueNumeric>20</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../list[19]/value[3]"/>
-      <value reference="../../list[19]/value[4]"/>
-      <value>
-        <valueString>Mid</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[6]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[7]/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
-    </list>
-    <list>
-      <value>
-        <valueNumeric>21</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../list[19]/value[3]"/>
-      <value reference="../../list[19]/value[4]"/>
-      <value>
-        <valueString>Late</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[6]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[7]/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
-    </list>
-    <list>
-      <value>
-        <valueNumeric>22</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../list[19]/value[3]"/>
-      <value>
-        <valueString>Mid</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Early</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[6]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[7]/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
-    </list>
-    <list>
-      <value>
-        <valueNumeric>23</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../list[19]/value[3]"/>
-      <value reference="../../list[22]/value[4]"/>
-      <value>
-        <valueString>Mid</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[6]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[7]/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
-    </list>
-    <list>
-      <value>
-        <valueNumeric>24</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../list[19]/value[3]"/>
-      <value reference="../../list[22]/value[4]"/>
-      <value>
-        <valueString>Late</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[6]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[7]/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
-    </list>
-    <list>
-      <value>
-        <valueNumeric>25</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../list[19]/value[3]"/>
-      <value>
-        <valueString>Late</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Early</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[6]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[7]/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
-    </list>
-    <list>
-      <value>
-        <valueNumeric>26</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../list[19]/value[3]"/>
-      <value reference="../../list[25]/value[4]"/>
-      <value>
-        <valueString>Mid</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[6]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[7]/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
-    </list>
-    <list>
-      <value>
-        <valueNumeric>27</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../list[19]/value[3]"/>
-      <value reference="../../list[25]/value[4]"/>
-      <value>
-        <valueString>Late</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[4]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[6]/typedDefaultValue"/>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[7]/typedDefaultValue"/>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
     </list>
   </data>
 </decision-table52>
