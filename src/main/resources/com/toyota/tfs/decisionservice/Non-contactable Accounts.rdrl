@@ -8,4 +8,5 @@ rule "Non-contactable Accounts"
 		modify( account ) {
 				setTreatmentOutcome( "Do not contact" )
 		}
+		System.out.println("===> DecisionService: firing rule "+drools.getRule().getName());
 end
