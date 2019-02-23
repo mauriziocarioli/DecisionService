@@ -1,0 +1,14 @@
+<org.uberfire.java.nio.base.Properties serialization="custom">
+  <unserializable-parents/>
+  <map>
+    <default>
+      <loadFactor>0.75</loadFactor>
+      <threshold>12</threshold>
+    </default>
+    <int>16</int>
+    <int>1</int>
+    <string>dcore.description[0]</string>
+    <string>SLIDE 10
+Rule 1: Any early stage account with current balance &lt; $2,500 will be assigned to ?virtual? treatment (List 0001 or 0002).</string>
+  </map>
+</org.uberfire.java.nio.base.Properties>
