@@ -1,0 +1,16 @@
+<org.uberfire.java.nio.base.Properties serialization="custom">
+  <unserializable-parents/>
+  <map>
+    <default>
+      <loadFactor>0.75</loadFactor>
+      <threshold>12</threshold>
+    </default>
+    <int>16</int>
+    <int>1</int>
+    <string>dcore.description[0]</string>
+    <string>Rule 3: Balance at Risk  (BAR) Sample Strategy Treatment &quot;A&quot; (40% POC Allocation)
+Balance at Risk(BAR) = Current Balance * prob
+Accounts are classified based on balance at risk, then assigned a treatment based on the following color grid. 
+</string>
+  </map>
+</org.uberfire.java.nio.base.Properties>
