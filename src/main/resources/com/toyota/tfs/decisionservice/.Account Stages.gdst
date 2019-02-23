@@ -8,7 +8,8 @@
     <int>16</int>
     <int>1</int>
     <string>dcore.description[0]</string>
-    <string>Early Stage (Deck 10 ? 14)
+    <string>SLIDE 8
+Early Stage (Deck 10 ? 14)
 &gt;=12 and &lt;=45 Days Past Due (DaysDelinquent Field)
 Accounts are further subset by time zone mismatches to adhere to Safe Harbor rules
 Mid Stage (Deck 15 ? 16)
