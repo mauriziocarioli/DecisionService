@@ -83,8 +83,8 @@
     </expect-rule>
     <expect-rule>
       <ruleName>Row 6 Early Stage Treatment Lists</ruleName>
+      <expectedCount>1</expectedCount>
       <explanation>Rule [Row 6 Early Stage Treatment Lists] was activated 1 times.</explanation>
-      <expectedFire>true</expectedFire>
       <successResult>true</successResult>
       <actualResult>1</actualResult>
     </expect-rule>
