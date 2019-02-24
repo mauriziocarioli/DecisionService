@@ -12,11 +12,11 @@
           <nature>4</nature>
         </field-data>
       </fieldData>
-      <name>account</name>
+      <name>a</name>
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>208</executionTimeResult>
+      <executionTimeResult>586</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
@@ -29,19 +29,19 @@
     <expect-fact>
       <fieldValues>
         <expect-field>
-          <fieldName>callList</fieldName>
-          <expected>N</expected>
+          <fieldName>treatmentOutcome</fieldName>
+          <expected>Do not contact</expected>
           <successResult>true</successResult>
-          <explanation>[account] field [callList] was [N].</explanation>
+          <explanation>[a] field [treatmentOutcome] was [Do not contact].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
       </fieldValues>
-      <name>account</name>
+      <name>a</name>
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2019-02-20 16:59:52.826 UTC</lastRunResult>
+  <lastRunResult>2019-02-24 15:30:11.690 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.toyota.tfs.decisionservice</packageName>
