@@ -6,7 +6,8 @@ rule "Non-contactable Accounts"
 		account : AccountHolder( aflag == "Y" || nflag == "Y" || eflag == "Y" || NO_CONTACT == "Y" || sflag == "Y" || bad_Number == "Y" || DAFlag == "Y" )
 	then
 		modify( account ) {
-				setTreatmentOutcome( "Do not contact" )
+				setTreatmentOutcome( "Do not contact" ), 
+				setDoNotContact( "Y" )
 		}
 		System.out.println("===> DecisionService: firing rule "+drools.getRule().getName());
 end
