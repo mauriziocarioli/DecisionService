@@ -1,0 +1,9 @@
+package com.toyota.tfs.decisionservice;
+
+import java.lang.Number;
+
+rule "Do Not Contact is not set"
+	dialect "mvel"
+	when
+	then
+end
