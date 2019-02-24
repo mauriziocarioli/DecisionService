@@ -1,5 +1,5 @@
 <scenario>
-  <name>Test Early Stage lower bound.scenario</name>
+  <name>Test Outcome Virtual 0002.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
@@ -25,7 +25,7 @@
       <fieldData>
         <field-data>
           <name>rand2</name>
-          <value>0.6019</value>
+          <value>0.3686</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -33,7 +33,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>104</executionTimeResult>
+      <executionTimeResult>289</executionTimeResult>
       <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
@@ -64,10 +64,10 @@
         </expect-field>
         <expect-field>
           <fieldName>LIST_1</fieldName>
-          <expected>0002</expected>
+          <expected>0001</expected>
           <actualResult></actualResult>
           <successResult>true</successResult>
-          <explanation>[a] field [LIST_1] was [0002].</explanation>
+          <explanation>[a] field [LIST_1] was [0001].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -76,14 +76,14 @@
       <anonymous>false</anonymous>
     </expect-fact>
     <expect-rule>
-      <ruleName>Row 2 Early Stage with Low Balance Treatment</ruleName>
+      <ruleName>Row 1 Early Stage with Low Balance Treatment</ruleName>
       <expectedCount>1</expectedCount>
-      <explanation>Rule [Row 2 Early Stage with Low Balance Treatment] activated 1 times.</explanation>
+      <explanation>Rule [Row 1 Early Stage with Low Balance Treatment] activated 1 times.</explanation>
       <successResult>true</successResult>
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2019-02-24 15:43:34.592 UTC</lastRunResult>
+  <lastRunResult>2019-02-24 15:45:55.281 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.toyota.tfs.decisionservice</packageName>
