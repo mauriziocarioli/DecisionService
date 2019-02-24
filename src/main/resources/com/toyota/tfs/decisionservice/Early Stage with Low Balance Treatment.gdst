@@ -55,65 +55,8 @@
       </window>
       <entryPointName></entryPointName>
     </Pattern52>
-    <Pattern52>
-      <factType>Helper</factType>
-      <boundName>r</boundName>
-      <isNegated>false</isNegated>
-      <conditions>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString></valueString>
-            <dataType>NUMERIC_DOUBLE</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>false</hideColumn>
-          <width>100</width>
-          <header>min draw</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>rand2</factField>
-          <fieldType>Double</fieldType>
-          <operator>&gt;=</operator>
-          <parameters/>
-          <binding></binding>
-        </condition-column52>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString></valueString>
-            <dataType>NUMERIC_DOUBLE</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>false</hideColumn>
-          <width>100</width>
-          <header>max draw</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>rand2</factField>
-          <fieldType>Double</fieldType>
-          <operator>&lt;</operator>
-          <parameters/>
-          <binding></binding>
-        </condition-column52>
-      </conditions>
-      <window>
-        <parameters/>
-      </window>
-      <entryPointName></entryPointName>
-    </Pattern52>
   </conditionPatterns>
   <actionCols>
-    <set-field-col52>
-      <typedDefaultValue>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </typedDefaultValue>
-      <hideColumn>false</hideColumn>
-      <width>100</width>
-      <header>List</header>
-      <boundName>a</boundName>
-      <factField>LIST_1</factField>
-      <type>String</type>
-      <update>true</update>
-    </set-field-col52>
     <set-field-col52>
       <typedDefaultValue>
         <valueString></valueString>
@@ -190,7 +133,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>List 0001</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -202,75 +145,6 @@
       </value>
       <value>
         <valueString>Early</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric class="double">0.0</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_DOUBLE</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric class="double">0.5</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_DOUBLE</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>0001</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Virtual</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-    </list>
-    <list>
-      <value>
-        <valueNumeric class="int">2</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>List 0002</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric class="double">2500.0</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_DOUBLE</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Early</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric class="double">0.5</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_DOUBLE</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric class="double">1.0</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_DOUBLE</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>0002</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
