@@ -21,41 +21,6 @@
           <value>N</value>
           <nature>4</nature>
         </field-data>
-        <field-data>
-          <name>aflag</name>
-          <value>N</value>
-          <nature>4</nature>
-        </field-data>
-        <field-data>
-          <name>nflag</name>
-          <value>N</value>
-          <nature>4</nature>
-        </field-data>
-        <field-data>
-          <name>eflag</name>
-          <value>N</value>
-          <nature>4</nature>
-        </field-data>
-        <field-data>
-          <name>NO_CONTACT</name>
-          <value>N</value>
-          <nature>4</nature>
-        </field-data>
-        <field-data>
-          <name>sflag</name>
-          <value>N</value>
-          <nature>4</nature>
-        </field-data>
-        <field-data>
-          <name>bad_Number</name>
-          <value>N</value>
-          <nature>4</nature>
-        </field-data>
-        <field-data>
-          <name>DAFlag</name>
-          <value>N</value>
-          <nature>4</nature>
-        </field-data>
       </fieldData>
       <name>a</name>
       <isModify>false</isModify>
