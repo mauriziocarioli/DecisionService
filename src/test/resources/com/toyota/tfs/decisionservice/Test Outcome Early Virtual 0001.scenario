@@ -21,6 +21,41 @@
           <value>N</value>
           <nature>4</nature>
         </field-data>
+        <field-data>
+          <name>aflag</name>
+          <value>N</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>nflag</name>
+          <value>N</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>eflag</name>
+          <value>N</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>NO_CONTACT</name>
+          <value>N</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>sflag</name>
+          <value>N</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>bad_Number</name>
+          <value>N</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>DAFlag</name>
+          <value>N</value>
+          <nature>4</nature>
+        </field-data>
       </fieldData>
       <name>a</name>
       <isModify>false</isModify>
@@ -38,7 +73,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>116</executionTimeResult>
+      <executionTimeResult>194</executionTimeResult>
       <numberOfRulesFired>4</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -54,6 +89,7 @@
         <expect-field>
           <fieldName>treatmentOutcome</fieldName>
           <expected>Virtual</expected>
+          <actualResult>Do not contact</actualResult>
           <successResult>true</successResult>
           <explanation>[a] field [treatmentOutcome] was [Virtual].</explanation>
           <operator>==</operator>
@@ -62,7 +98,7 @@
         <expect-field>
           <fieldName>LIST_1</fieldName>
           <expected>0001</expected>
-          <actualResult>0002</actualResult>
+          <actualResult>0400</actualResult>
           <successResult>true</successResult>
           <explanation>[a] field [LIST_1] was [0001].</explanation>
           <operator>==</operator>
@@ -94,7 +130,7 @@
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2019-02-24 19:26:32.197 UTC</lastRunResult>
+  <lastRunResult>2019-02-24 19:31:23.4 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.toyota.tfs.decisionservice</packageName>
