@@ -38,8 +38,8 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>207</executionTimeResult>
-      <numberOfRulesFired>3</numberOfRulesFired>
+      <executionTimeResult>116</executionTimeResult>
+      <numberOfRulesFired>4</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
@@ -62,7 +62,7 @@
         <expect-field>
           <fieldName>LIST_1</fieldName>
           <expected>0001</expected>
-          <actualResult></actualResult>
+          <actualResult>0002</actualResult>
           <successResult>true</successResult>
           <explanation>[a] field [LIST_1] was [0001].</explanation>
           <operator>==</operator>
@@ -94,7 +94,7 @@
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2019-02-24 16:57:00.387 UTC</lastRunResult>
+  <lastRunResult>2019-02-24 19:26:32.197 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.toyota.tfs.decisionservice</packageName>
