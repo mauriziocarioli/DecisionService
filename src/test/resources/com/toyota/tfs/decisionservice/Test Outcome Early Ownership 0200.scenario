@@ -1,5 +1,5 @@
 <scenario>
-  <name>Test Outcome Early Managed 0100.scenario</name>
+  <name>Test Outcome Early Ownership 0200.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
@@ -25,7 +25,7 @@
       <fieldData>
         <field-data>
           <name>rand1</name>
-          <value>0.1464</value>
+          <value>0.1704</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -33,7 +33,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>208</executionTimeResult>
+      <executionTimeResult>108</executionTimeResult>
       <numberOfRulesFired>3</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -48,18 +48,18 @@
         </expect-field>
         <expect-field>
           <fieldName>treatmentOutcome</fieldName>
-          <expected>Managed</expected>
+          <expected>Ownership</expected>
           <successResult>true</successResult>
-          <explanation>[a] field [treatmentOutcome] was [Managed].</explanation>
+          <explanation>[a] field [treatmentOutcome] was [Ownership].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
         <expect-field>
           <fieldName>LIST_1</fieldName>
-          <expected>0100</expected>
+          <expected>0200</expected>
           <actualResult></actualResult>
           <successResult>true</successResult>
-          <explanation>[a] field [LIST_1] was [0100].</explanation>
+          <explanation>[a] field [LIST_1] was [0200].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -75,21 +75,21 @@
       <actualResult>1</actualResult>
     </expect-rule>
     <expect-rule>
-      <ruleName>Row 4 Early Stages Treatment</ruleName>
+      <ruleName>Row 5 Early Stages Treatment</ruleName>
       <expectedCount>1</expectedCount>
-      <explanation>Rule [Row 4 Early Stages Treatment] activated 1 times.</explanation>
+      <explanation>Rule [Row 5 Early Stages Treatment] activated 1 times.</explanation>
       <successResult>true</successResult>
       <actualResult>1</actualResult>
     </expect-rule>
     <expect-rule>
-      <ruleName>Row 5 Early Stage Treatment Lists</ruleName>
-      <expectedCount>1</expectedCount>
-      <explanation>Rule [Row 5 Early Stage Treatment Lists] activated 1 times.</explanation>
+      <ruleName>Row 6 Early Stage Treatment Lists</ruleName>
+      <explanation>Rule [Row 6 Early Stage Treatment Lists] was activated 1 times.</explanation>
+      <expectedFire>true</expectedFire>
       <successResult>true</successResult>
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2019-02-24 17:16:37.304 UTC</lastRunResult>
+  <lastRunResult>2019-02-24 17:23:39.380 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.toyota.tfs.decisionservice</packageName>
