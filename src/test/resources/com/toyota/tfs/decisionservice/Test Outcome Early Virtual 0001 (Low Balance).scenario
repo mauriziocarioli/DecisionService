@@ -1,5 +1,5 @@
 <scenario>
-  <name>Test Outcome Virtual 0001.scenario</name>
+  <name>Test Outcome Early Virtual 0001 (Low Balance).scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
@@ -14,6 +14,11 @@
         <field-data>
           <name>BALANCE</name>
           <value>2499</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>aflag</name>
+          <value>N</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -33,8 +38,8 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>287</executionTimeResult>
-      <numberOfRulesFired>2</numberOfRulesFired>
+      <executionTimeResult>185</executionTimeResult>
+      <numberOfRulesFired>3</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
       <ruleName>Row 1 Account Stages</ruleName>
@@ -56,7 +61,7 @@
         <expect-field>
           <fieldName>treatmentOutcome</fieldName>
           <expected>Virtual</expected>
-          <actualResult></actualResult>
+          <actualResult>Do not contact</actualResult>
           <successResult>true</successResult>
           <explanation>[a] field [treatmentOutcome] was [Virtual].</explanation>
           <operator>==</operator>
@@ -65,7 +70,7 @@
         <expect-field>
           <fieldName>LIST_1</fieldName>
           <expected>0002</expected>
-          <actualResult></actualResult>
+          <actualResult>0400</actualResult>
           <successResult>true</successResult>
           <explanation>[a] field [LIST_1] was [0002].</explanation>
           <operator>==</operator>
@@ -83,7 +88,7 @@
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2019-02-24 15:54:54.580 UTC</lastRunResult>
+  <lastRunResult>2019-02-24 19:39:35.486 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.toyota.tfs.decisionservice</packageName>
