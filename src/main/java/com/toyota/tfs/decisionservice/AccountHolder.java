@@ -13,7 +13,7 @@ public class AccountHolder {
 	private int splitIndex;
 	private String errorMessage;
 
-	private Character doNotContact;
+	private String doNotContact;
 
 	// These getters and members added by me to cover the rules -- goes down to
 	// next comment
@@ -1797,11 +1797,11 @@ public class AccountHolder {
 		this.skip_ID = skip_ID;
 	}
 
-	public java.lang.Character getDoNotContact() {
+	public java.lang.String getDoNotContact() {
 		return this.doNotContact;
 	}
 
-	public void setDoNotContact(java.lang.Character doNotContact) {
+	public void setDoNotContact(java.lang.String doNotContact) {
 		this.doNotContact = doNotContact;
 	}
 
