@@ -1,5 +1,5 @@
 <scenario>
-  <name>Test Outcome Early Virtual 0001 case 2.scenario</name>
+  <name>Test Outcome Early Virtual 0002 case 2.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
@@ -18,7 +18,7 @@
         </field-data>
         <field-data>
           <name>mismatch</name>
-          <value>N</value>
+          <value>Y</value>
           <nature>4</nature>
         </field-data>
         <field-data>
@@ -43,7 +43,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>292</executionTimeResult>
+      <executionTimeResult>111</executionTimeResult>
       <numberOfRulesFired>5</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -67,10 +67,10 @@
         </expect-field>
         <expect-field>
           <fieldName>LIST_1</fieldName>
-          <expected>0001</expected>
+          <expected>0002</expected>
           <actualResult>0400</actualResult>
           <successResult>true</successResult>
-          <explanation>[a] field [LIST_1] was [0001].</explanation>
+          <explanation>[a] field [LIST_1] was [0002].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -100,14 +100,14 @@
       <actualResult>1</actualResult>
     </expect-rule>
     <expect-rule>
-      <ruleName>Row 1 Early Stage Treatment Lists</ruleName>
+      <ruleName>Row 2 Early Stage Treatment Lists</ruleName>
       <expectedCount>1</expectedCount>
-      <explanation>Rule [Row 1 Early Stage Treatment Lists] activated 1 times.</explanation>
+      <explanation>Rule [Row 2 Early Stage Treatment Lists] activated 1 times.</explanation>
       <successResult>true</successResult>
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2019-02-24 20:14:29.590 UTC</lastRunResult>
+  <lastRunResult>2019-02-24 20:17:38.311 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.toyota.tfs.decisionservice</packageName>
