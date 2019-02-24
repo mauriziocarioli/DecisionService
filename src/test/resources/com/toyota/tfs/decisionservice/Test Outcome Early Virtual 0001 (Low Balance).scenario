@@ -16,25 +16,18 @@
           <value>2499</value>
           <nature>4</nature>
         </field-data>
+        <field-data>
+          <name>mismatch</name>
+          <value>N</value>
+          <nature>4</nature>
+        </field-data>
       </fieldData>
       <name>a</name>
       <isModify>false</isModify>
     </fact-data>
-    <fact-data>
-      <type>Helper</type>
-      <fieldData>
-        <field-data>
-          <name>rand2</name>
-          <value>0.6019</value>
-          <nature>4</nature>
-        </field-data>
-      </fieldData>
-      <name>h</name>
-      <isModify>false</isModify>
-    </fact-data>
     <execution-trace>
-      <executionTimeResult>185</executionTimeResult>
-      <numberOfRulesFired>3</numberOfRulesFired>
+      <executionTimeResult>107</executionTimeResult>
+      <numberOfRulesFired>4</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
       <ruleName>Row 1 Account Stages</ruleName>
@@ -64,10 +57,10 @@
         </expect-field>
         <expect-field>
           <fieldName>LIST_1</fieldName>
-          <expected>0002</expected>
+          <expected>0001</expected>
           <actualResult>0400</actualResult>
           <successResult>true</successResult>
-          <explanation>[a] field [LIST_1] was [0002].</explanation>
+          <explanation>[a] field [LIST_1] was [0001].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -76,14 +69,14 @@
       <anonymous>false</anonymous>
     </expect-fact>
     <expect-rule>
-      <ruleName>Row 2 Early Stage with Low Balance Treatment</ruleName>
+      <ruleName>Row 1 Early Stage with Low Balance Treatment</ruleName>
       <expectedCount>1</expectedCount>
-      <explanation>Rule [Row 2 Early Stage with Low Balance Treatment] activated 1 times.</explanation>
+      <explanation>Rule [Row 1 Early Stage with Low Balance Treatment] activated 1 times.</explanation>
       <successResult>true</successResult>
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2019-02-24 19:39:35.486 UTC</lastRunResult>
+  <lastRunResult>2019-02-24 20:04:17.683 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.toyota.tfs.decisionservice</packageName>
