@@ -16,7 +16,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>586</executionTimeResult>
+      <executionTimeResult>225</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
@@ -36,12 +36,20 @@
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
+        <expect-field>
+          <fieldName>doNotContact</fieldName>
+          <expected>Y</expected>
+          <successResult>true</successResult>
+          <explanation>[a] field [doNotContact] was [Y].</explanation>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
       </fieldValues>
       <name>a</name>
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2019-02-24 15:30:11.690 UTC</lastRunResult>
+  <lastRunResult>2019-02-24 18:57:07.883 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.toyota.tfs.decisionservice</packageName>
