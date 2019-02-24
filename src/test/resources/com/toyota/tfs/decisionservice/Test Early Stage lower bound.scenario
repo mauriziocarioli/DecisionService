@@ -20,9 +20,21 @@
       <name>a</name>
       <isModify>false</isModify>
     </fact-data>
+    <fact-data>
+      <type>Helper</type>
+      <fieldData>
+        <field-data>
+          <name>rand2</name>
+          <value>0.6019</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>h</name>
+      <isModify>false</isModify>
+    </fact-data>
     <execution-trace>
-      <executionTimeResult>202</executionTimeResult>
-      <numberOfRulesFired>1</numberOfRulesFired>
+      <executionTimeResult>104</executionTimeResult>
+      <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
       <ruleName>Row 1 Account Stages</ruleName>
@@ -45,17 +57,17 @@
           <fieldName>treatmentOutcome</fieldName>
           <expected>Virtual</expected>
           <actualResult></actualResult>
-          <successResult>false</successResult>
-          <explanation>[a] field [treatmentOutcome] was [] expected [Virtual].</explanation>
+          <successResult>true</successResult>
+          <explanation>[a] field [treatmentOutcome] was [Virtual].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
         <expect-field>
           <fieldName>LIST_1</fieldName>
-          <expected>0001</expected>
+          <expected>0002</expected>
           <actualResult></actualResult>
-          <successResult>false</successResult>
-          <explanation>[a] field [LIST_1] was [] expected [0001].</explanation>
+          <successResult>true</successResult>
+          <explanation>[a] field [LIST_1] was [0002].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -63,8 +75,15 @@
       <name>a</name>
       <anonymous>false</anonymous>
     </expect-fact>
+    <expect-rule>
+      <ruleName>Row 2 Early Stage with Low Balance Treatment</ruleName>
+      <expectedCount>1</expectedCount>
+      <explanation>Rule [Row 2 Early Stage with Low Balance Treatment] activated 1 times.</explanation>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
+    </expect-rule>
   </fixtures>
-  <lastRunResult>2019-02-24 15:36:01.191 UTC</lastRunResult>
+  <lastRunResult>2019-02-24 15:43:34.592 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.toyota.tfs.decisionservice</packageName>
