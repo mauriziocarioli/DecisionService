@@ -33,7 +33,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>108</executionTimeResult>
+      <executionTimeResult>208</executionTimeResult>
       <numberOfRulesFired>3</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -84,12 +84,12 @@
     <expect-rule>
       <ruleName>Row 6 Early Stage Treatment Lists</ruleName>
       <expectedCount>1</expectedCount>
-      <explanation>Rule [Row 6 Early Stage Treatment Lists] was activated 1 times.</explanation>
+      <explanation>Rule [Row 6 Early Stage Treatment Lists] activated 1 times.</explanation>
       <successResult>true</successResult>
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2019-02-24 17:23:39.380 UTC</lastRunResult>
+  <lastRunResult>2019-02-24 19:04:29.888 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.toyota.tfs.decisionservice</packageName>
