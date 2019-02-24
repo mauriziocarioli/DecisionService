@@ -13,6 +13,8 @@ public class AccountHolder {
 	private int splitIndex;
 	private String errorMessage;
 
+	private java.lang.Boolean doNotContact;
+
 	// These getters and members added by me to cover the rules -- goes down to
 	// next comment
 	public String getCallList() {
@@ -1793,6 +1795,14 @@ public class AccountHolder {
 
 	public void setSkip_ID(java.lang.Integer skip_ID) {
 		this.skip_ID = skip_ID;
+	}
+
+	public java.lang.Boolean getDoNotContact() {
+		return this.doNotContact;
+	}
+
+	public void setDoNotContact(java.lang.Boolean doNotContact) {
+		this.doNotContact = doNotContact;
 	}
 
 }
