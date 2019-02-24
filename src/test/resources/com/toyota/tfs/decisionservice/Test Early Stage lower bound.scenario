@@ -12,11 +12,11 @@
           <nature>4</nature>
         </field-data>
       </fieldData>
-      <name>account</name>
+      <name>a</name>
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>177</executionTimeResult>
+      <executionTimeResult>200</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
@@ -32,16 +32,16 @@
           <fieldName>currentStage</fieldName>
           <expected>Early</expected>
           <successResult>true</successResult>
-          <explanation>[account] field [currentStage] was [early].</explanation>
+          <explanation>[a] field [currentStage] was [Early].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
       </fieldValues>
-      <name>account</name>
+      <name>a</name>
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2019-02-20 18:55:53.232 UTC</lastRunResult>
+  <lastRunResult>2019-02-24 15:32:45.488 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.toyota.tfs.decisionservice</packageName>
