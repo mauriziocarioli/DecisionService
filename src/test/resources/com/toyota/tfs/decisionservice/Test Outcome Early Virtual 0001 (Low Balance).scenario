@@ -16,11 +16,6 @@
           <value>2499</value>
           <nature>4</nature>
         </field-data>
-        <field-data>
-          <name>aflag</name>
-          <value>N</value>
-          <nature>4</nature>
-        </field-data>
       </fieldData>
       <name>a</name>
       <isModify>false</isModify>
