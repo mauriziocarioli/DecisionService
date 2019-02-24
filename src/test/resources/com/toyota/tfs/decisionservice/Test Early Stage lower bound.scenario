@@ -11,12 +11,17 @@
           <value>12</value>
           <nature>4</nature>
         </field-data>
+        <field-data>
+          <name>BALANCE</name>
+          <value>2499</value>
+          <nature>4</nature>
+        </field-data>
       </fieldData>
       <name>a</name>
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>200</executionTimeResult>
+      <executionTimeResult>202</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
@@ -36,12 +41,30 @@
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
+        <expect-field>
+          <fieldName>treatmentOutcome</fieldName>
+          <expected>Virtual</expected>
+          <actualResult></actualResult>
+          <successResult>false</successResult>
+          <explanation>[a] field [treatmentOutcome] was [] expected [Virtual].</explanation>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+        <expect-field>
+          <fieldName>LIST_1</fieldName>
+          <expected>0001</expected>
+          <actualResult></actualResult>
+          <successResult>false</successResult>
+          <explanation>[a] field [LIST_1] was [] expected [0001].</explanation>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
       </fieldValues>
       <name>a</name>
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2019-02-24 15:32:45.488 UTC</lastRunResult>
+  <lastRunResult>2019-02-24 15:36:01.191 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.toyota.tfs.decisionservice</packageName>
