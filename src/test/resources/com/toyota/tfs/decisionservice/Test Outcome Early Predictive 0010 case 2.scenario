@@ -1,5 +1,5 @@
 <scenario>
-  <name>Test Outcome Predictive 1.scenario</name>
+  <name>Test Outcome Early Predictive 0010 case 2.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
@@ -21,6 +21,11 @@
           <value>N</value>
           <nature>4</nature>
         </field-data>
+        <field-data>
+          <name>BAR</name>
+          <value>3170.99</value>
+          <nature>4</nature>
+        </field-data>
       </fieldData>
       <name>a</name>
       <isModify>false</isModify>
@@ -30,7 +35,7 @@
       <fieldData>
         <field-data>
           <name>rand1</name>
-          <value>0.0857</value>
+          <value>0.3686</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -38,8 +43,8 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>199</executionTimeResult>
-      <numberOfRulesFired>3</numberOfRulesFired>
+      <executionTimeResult>114</executionTimeResult>
+      <numberOfRulesFired>5</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
@@ -80,9 +85,16 @@
       <actualResult>1</actualResult>
     </expect-rule>
     <expect-rule>
-      <ruleName>Row 3 Early Stages Treatment</ruleName>
+      <ruleName>Row 6 Early Stages Treatment</ruleName>
       <expectedCount>1</expectedCount>
-      <explanation>Rule [Row 3 Early Stages Treatment] activated 1 times.</explanation>
+      <explanation>Rule [Row 6 Early Stages Treatment] activated 1 times.</explanation>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
+    </expect-rule>
+    <expect-rule>
+      <ruleName>Row 3 Early Stage Treatment A</ruleName>
+      <expectedCount>1</expectedCount>
+      <explanation>Rule [Row 3 Early Stage Treatment A] activated 1 times.</explanation>
       <successResult>true</successResult>
       <actualResult>1</actualResult>
     </expect-rule>
@@ -94,7 +106,7 @@
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2019-02-24 16:00:52.586 UTC</lastRunResult>
+  <lastRunResult>2019-02-24 20:25:41.187 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.toyota.tfs.decisionservice</packageName>
