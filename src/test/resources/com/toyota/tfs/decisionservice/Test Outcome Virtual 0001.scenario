@@ -82,13 +82,6 @@
       <successResult>true</successResult>
       <actualResult>1</actualResult>
     </expect-rule>
-    <expect-rule>
-      <ruleName>Row 1 Account Stages</ruleName>
-      <expectedCount>1</expectedCount>
-      <explanation>Rule [Row 1 Account Stages] activated 1 times.</explanation>
-      <successResult>true</successResult>
-      <actualResult>1</actualResult>
-    </expect-rule>
   </fixtures>
   <lastRunResult>2019-02-24 15:54:54.580 UTC</lastRunResult>
   <rules/>
