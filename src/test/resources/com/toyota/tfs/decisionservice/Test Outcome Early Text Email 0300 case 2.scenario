@@ -1,5 +1,5 @@
 <scenario>
-  <name>Test Outcome Early Text Email.scenario</name>
+  <name>Test Outcome Early Text Email 0300 case 2.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
@@ -109,6 +109,6 @@
     <imports/>
   </imports>
   <ksessions>
-    <string>defaultKieSession</string>
+    <string>default-stateful-ksession</string>
   </ksessions>
 </scenario>
