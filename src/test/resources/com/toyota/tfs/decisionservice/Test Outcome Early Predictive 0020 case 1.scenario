@@ -1,5 +1,5 @@
 <scenario>
-  <name>Test Outcome Predictive 0020.scenario</name>
+  <name>Test Outcome Early Predictive 0020 case 1.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
@@ -102,6 +102,6 @@
     <imports/>
   </imports>
   <ksessions>
-    <string>defaultKieSession</string>
+    <string>default-stateful-ksession</string>
   </ksessions>
 </scenario>
