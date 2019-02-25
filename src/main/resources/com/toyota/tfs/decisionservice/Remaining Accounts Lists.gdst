@@ -101,7 +101,7 @@
           <constraintList>
             <constraints>
               <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-                <operator>!= null</operator>
+                <operator>== null</operator>
                 <constraintValueType>0</constraintValueType>
                 <expression>
                   <parts/>
