@@ -101,8 +101,9 @@
           <constraintList>
             <constraints>
               <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-                <operator>== null</operator>
-                <constraintValueType>0</constraintValueType>
+                <value>    </value>
+                <operator>==</operator>
+                <constraintValueType>1</constraintValueType>
                 <expression>
                   <parts/>
                   <index>2147483647</index>
@@ -233,7 +234,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
+        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
         <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
@@ -284,7 +285,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
+        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
         <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
