@@ -1,0 +1,105 @@
+<scenario>
+  <name>Test Outcome Mid Managed 1001.scenario</name>
+  <maxRuleFirings>100000</maxRuleFirings>
+  <globals/>
+  <fixtures>
+    <fact-data>
+      <type>AccountHolder</type>
+      <fieldData>
+        <field-data>
+          <name>daysDelinquent</name>
+          <value>46</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>BALANCE</name>
+          <value>2500</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>risk_score</name>
+          <value>5.68</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>skip_ID</name>
+          <value>799</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>a</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <fact-data>
+      <type>Helper</type>
+      <fieldData>
+        <field-data>
+          <name>rand1</name>
+          <value>0.1464</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>h</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <execution-trace>
+      <executionTimeResult>126</executionTimeResult>
+      <numberOfRulesFired>3</numberOfRulesFired>
+    </execution-trace>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>currentStage</fieldName>
+          <expected>Mid</expected>
+          <successResult>true</successResult>
+          <explanation>[a] field [currentStage] was [Mid].</explanation>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+        <expect-field>
+          <fieldName>treatmentOutcome</fieldName>
+          <expected>Managed</expected>
+          <successResult>true</successResult>
+          <explanation>[a] field [treatmentOutcome] was [Managed].</explanation>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+        <expect-field>
+          <fieldName>LIST_1</fieldName>
+          <expected>1001</expected>
+          <actualResult></actualResult>
+          <successResult>true</successResult>
+          <explanation>[a] field [LIST_1] was [1001].</explanation>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+      </fieldValues>
+      <name>a</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
+    <expect-rule>
+      <ruleName>Row 2 Account Stages</ruleName>
+      <expectedCount>1</expectedCount>
+      <explanation>Rule [Row 2 Account Stages] activated 1 times.</explanation>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
+    </expect-rule>
+    <expect-rule>
+      <ruleName>Row 1 Mid Stage Treatment and Skip Lists</ruleName>
+      <expectedCount>1</expectedCount>
+      <explanation>Rule [Row 1 Mid Stage Treatment and Skip Lists] activated 1 times.</explanation>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
+    </expect-rule>
+  </fixtures>
+  <lastRunResult>2019-02-25 16:55:27.879 UTC</lastRunResult>
+  <rules/>
+  <inclusive>false</inclusive>
+  <packageName>com.toyota.tfs.decisionservice</packageName>
+  <imports>
+    <imports/>
+  </imports>
+  <ksessions>
+    <string>default-stateful-ksession</string>
+  </ksessions>
+</scenario>
