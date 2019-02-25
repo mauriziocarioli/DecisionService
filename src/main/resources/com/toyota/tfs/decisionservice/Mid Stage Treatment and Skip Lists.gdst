@@ -106,10 +106,27 @@
           <operator>==</operator>
           <parameters/>
         </condition-column52>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>Treatment is not</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>treatmentOutcome</factField>
+          <fieldType>String</fieldType>
+          <operator>!=</operator>
+          <parameters/>
+          <binding></binding>
+        </condition-column52>
       </conditions>
       <window>
         <parameters/>
       </window>
+      <entryPointName></entryPointName>
     </Pattern52>
   </conditionPatterns>
   <actionCols>
@@ -240,6 +257,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>Do not contact</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>Managed</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -297,6 +319,11 @@
       </value>
       <value>
         <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>Do not contact</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -362,6 +389,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>Do not contact</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>Managed</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -423,6 +455,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>Do not contact</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>Ownership</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -478,6 +515,11 @@
       </value>
       <value>
         <valueString>Do not contact</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
