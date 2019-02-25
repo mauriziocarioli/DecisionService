@@ -43,7 +43,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>480</executionTimeResult>
+      <executionTimeResult>284</executionTimeResult>
       <numberOfRulesFired>5</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -106,7 +106,7 @@
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2019-02-25 15:09:17.396 UTC</lastRunResult>
+  <lastRunResult>2019-02-25 15:12:01.979 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.toyota.tfs.decisionservice</packageName>
@@ -114,6 +114,6 @@
     <imports/>
   </imports>
   <ksessions>
-    <string>default-stateless-ksession</string>
+    <string>default-stateful-ksession</string>
   </ksessions>
 </scenario>
