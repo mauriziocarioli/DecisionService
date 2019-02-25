@@ -1,5 +1,5 @@
 <scenario>
-  <name>Test Outcome Mid Managed 1001.scenario</name>
+  <name>Test Outcome Mid Ownership 1002.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
@@ -18,12 +18,12 @@
         </field-data>
         <field-data>
           <name>risk_score</name>
-          <value>5.68</value>
+          <value>5.69</value>
           <nature>4</nature>
         </field-data>
         <field-data>
           <name>skip_ID</name>
-          <value>799</value>
+          <value>800</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -43,7 +43,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>126</executionTimeResult>
+      <executionTimeResult>105</executionTimeResult>
       <numberOfRulesFired>3</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -58,18 +58,19 @@
         </expect-field>
         <expect-field>
           <fieldName>treatmentOutcome</fieldName>
-          <expected>Managed</expected>
+          <expected>Ownership</expected>
+          <actualResult>Managed</actualResult>
           <successResult>true</successResult>
-          <explanation>[a] field [treatmentOutcome] was [Managed].</explanation>
+          <explanation>[a] field [treatmentOutcome] was [Ownership].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
         <expect-field>
           <fieldName>LIST_1</fieldName>
-          <expected>1001</expected>
-          <actualResult></actualResult>
+          <expected>1002</expected>
+          <actualResult>1001</actualResult>
           <successResult>true</successResult>
-          <explanation>[a] field [LIST_1] was [1001].</explanation>
+          <explanation>[a] field [LIST_1] was [1002].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -85,14 +86,14 @@
       <actualResult>1</actualResult>
     </expect-rule>
     <expect-rule>
-      <ruleName>Row 1 Mid Stage Treatment and Skip Lists</ruleName>
+      <ruleName>Row 4 Mid Stage Treatment and Skip Lists</ruleName>
       <expectedCount>1</expectedCount>
-      <explanation>Rule [Row 1 Mid Stage Treatment and Skip Lists] activated 1 times.</explanation>
+      <explanation>Rule [Row 4 Mid Stage Treatment and Skip Lists] activated 1 times.</explanation>
       <successResult>true</successResult>
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2019-02-25 16:55:27.879 UTC</lastRunResult>
+  <lastRunResult>2019-02-25 19:33:20.168 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.toyota.tfs.decisionservice</packageName>
