@@ -57,6 +57,6 @@
     <imports/>
   </imports>
   <ksessions>
-    <string>defaultKieSession</string>
+    <string>default-stateful-ksession</string>
   </ksessions>
 </scenario>
