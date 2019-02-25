@@ -1,5 +1,5 @@
 <scenario>
-  <name>Test Outcome Early Managed 0100.scenario</name>
+  <name>Test Outcome Mid Managed 1001.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
@@ -8,12 +8,22 @@
       <fieldData>
         <field-data>
           <name>daysDelinquent</name>
-          <value>12</value>
+          <value>46</value>
           <nature>4</nature>
         </field-data>
         <field-data>
           <name>BALANCE</name>
           <value>2500</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>risk_score</name>
+          <value>5.68</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>skip_ID</name>
+          <value>799</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -33,16 +43,16 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>208</executionTimeResult>
+      <executionTimeResult>126</executionTimeResult>
       <numberOfRulesFired>3</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>currentStage</fieldName>
-          <expected>Early</expected>
+          <expected>Mid</expected>
           <successResult>true</successResult>
-          <explanation>[a] field [currentStage] was [Early].</explanation>
+          <explanation>[a] field [currentStage] was [Mid].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -56,10 +66,10 @@
         </expect-field>
         <expect-field>
           <fieldName>LIST_1</fieldName>
-          <expected>0100</expected>
+          <expected>1001</expected>
           <actualResult></actualResult>
           <successResult>true</successResult>
-          <explanation>[a] field [LIST_1] was [0100].</explanation>
+          <explanation>[a] field [LIST_1] was [1001].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -68,28 +78,21 @@
       <anonymous>false</anonymous>
     </expect-fact>
     <expect-rule>
-      <ruleName>Row 1 Account Stages</ruleName>
+      <ruleName>Row 2 Account Stages</ruleName>
       <expectedCount>1</expectedCount>
-      <explanation>Rule [Row 1 Account Stages] activated 1 times.</explanation>
+      <explanation>Rule [Row 2 Account Stages] activated 1 times.</explanation>
       <successResult>true</successResult>
       <actualResult>1</actualResult>
     </expect-rule>
     <expect-rule>
-      <ruleName>Row 4 Early Stages Treatment</ruleName>
+      <ruleName>Row 1 Mid Stage Treatment and Skip Lists</ruleName>
       <expectedCount>1</expectedCount>
-      <explanation>Rule [Row 4 Early Stages Treatment] activated 1 times.</explanation>
-      <successResult>true</successResult>
-      <actualResult>1</actualResult>
-    </expect-rule>
-    <expect-rule>
-      <ruleName>Row 5 Early Stage Treatment Lists</ruleName>
-      <expectedCount>1</expectedCount>
-      <explanation>Rule [Row 5 Early Stage Treatment Lists] activated 1 times.</explanation>
+      <explanation>Rule [Row 1 Mid Stage Treatment and Skip Lists] activated 1 times.</explanation>
       <successResult>true</successResult>
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2019-02-24 17:16:37.304 UTC</lastRunResult>
+  <lastRunResult>2019-02-25 16:55:27.879 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.toyota.tfs.decisionservice</packageName>
