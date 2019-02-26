@@ -3,7 +3,7 @@ package com.toyota.tfs.decisionservice;
 rule "Late Stage 3"
 	dialect "mvel"
 	when
-		a : AccountHolder( currentStage == "Late" , rflag != "R" , BALANCE >= 1500 , LIST_1 > "1587" , LIST_1 < "1750" )
+		a : AccountHolder( currentStage == "Late" , rflag != "R" , BALANCE >= 1500 , LIST_1 > "1795" )
 		h : Helper( )
 	then
 		System.out.println("===> DecisionService: firing rule "+drools.getRule().getName());
