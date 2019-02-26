@@ -2,6 +2,8 @@ package com.toyota.tfs.decisionservice;
 
 //import com.opencsv.bean.CsvBindByName;
 
+@org.kie.api.definition.type.Label("Account")
+@org.kie.api.definition.type.Description("This class represents the account record")
 public class AccountHolder {
 
 	// added following for Machine Learning options
