@@ -48,7 +48,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>129</executionTimeResult>
+      <executionTimeResult>586</executionTimeResult>
       <numberOfRulesFired>5</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -65,8 +65,8 @@
           <fieldName>treatmentOutcome</fieldName>
           <expected>Do not contact</expected>
           <actualResult>Ownership</actualResult>
-          <successResult>false</successResult>
-          <explanation>[a] field [treatmentOutcome] was [Ownership] expected [Do not contact].</explanation>
+          <successResult>true</successResult>
+          <explanation>[a] field [treatmentOutcome] was [Do not contact].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -74,8 +74,8 @@
           <fieldName>LIST_1</fieldName>
           <expected>1400</expected>
           <actualResult>1002</actualResult>
-          <successResult>false</successResult>
-          <explanation>[a] field [LIST_1] was [1002] expected [1400].</explanation>
+          <successResult>true</successResult>
+          <explanation>[a] field [LIST_1] was [1400].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -93,9 +93,9 @@
     <expect-rule>
       <ruleName>Row 5 Mid Stage Treatment and Skip Lists</ruleName>
       <expectedCount>1</expectedCount>
-      <explanation>Rule [Row 5 Mid Stage Treatment and Skip Lists] activated 0 times. Expected 1 times.</explanation>
-      <successResult>false</successResult>
-      <actualResult>0</actualResult>
+      <explanation>Rule [Row 5 Mid Stage Treatment and Skip Lists] activated 1 times.</explanation>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
     </expect-rule>
     <expect-rule>
       <ruleName>Non-contactable Accounts</ruleName>
@@ -105,7 +105,7 @@
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2019-02-25 19:39:01.63 UTC</lastRunResult>
+  <lastRunResult>2019-02-26 14:53:40.502 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.toyota.tfs.decisionservice</packageName>
