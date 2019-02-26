@@ -5,11 +5,11 @@ package com.toyota.tfs.decisionservice;
  */
 
 @org.kie.api.definition.type.Description("This object represents the fact that the account has been assigned")
-public class Unassigned implements java.io.Serializable {
+public class Assigned implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	public Unassigned() {
+	public Assigned() {
 	}
 
 }
