@@ -5,6 +5,6 @@ import java.lang.Number;
 rule "Do Not Contact is not set"
 	dialect "mvel"
 	when
-		AccountHolder( doNotContact != "Y" )
+		not (DoNotContact( )) 
 	then
 end
