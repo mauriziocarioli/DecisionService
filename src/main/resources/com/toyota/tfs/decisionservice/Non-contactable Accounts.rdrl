@@ -7,7 +7,7 @@ rule "Non-contactable Accounts"
 	then
 		System.out.println("===> DecisionService: firing rule "+drools.getRule().getName());
 		modify( account ) {
-				setTreatmentOutcome( "Do not contact" ), 
-				setDoNotContact( "Y" )
+				setTreatmentOutcome( "Do not contact" )
 		}
+		insertLogical( new DoNotContact() );
 end
