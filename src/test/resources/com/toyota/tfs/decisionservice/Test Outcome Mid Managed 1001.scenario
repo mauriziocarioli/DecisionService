@@ -43,7 +43,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>126</executionTimeResult>
+      <executionTimeResult>292</executionTimeResult>
       <numberOfRulesFired>3</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -92,7 +92,7 @@
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2019-02-25 16:55:27.879 UTC</lastRunResult>
+  <lastRunResult>2019-02-26 14:53:49.504 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.toyota.tfs.decisionservice</packageName>
