@@ -214,11 +214,11 @@
       <width>-1</width>
       <header>Assigned</header>
       <definition>
-        <org.drools.workbench.models.datamodel.rule.ActionInsertLogicalFact>
+        <org.drools.workbench.models.datamodel.rule.ActionInsertFact>
           <fieldValues/>
           <factType>AccountHasBeenAssigned</factType>
           <isBound>false</isBound>
-        </org.drools.workbench.models.datamodel.rule.ActionInsertLogicalFact>
+        </org.drools.workbench.models.datamodel.rule.ActionInsertFact>
       </definition>
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
