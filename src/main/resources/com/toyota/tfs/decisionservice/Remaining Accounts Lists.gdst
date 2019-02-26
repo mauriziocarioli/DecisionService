@@ -97,30 +97,18 @@
       <constraintValueType>1</constraintValueType>
       <parameters/>
       <definition>
-        <org.drools.workbench.models.datamodel.rule.FactPattern>
-          <constraintList>
-            <constraints>
-              <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-                <value>    </value>
-                <operator>==</operator>
-                <constraintValueType>1</constraintValueType>
-                <expression>
-                  <parts/>
-                  <index>2147483647</index>
-                </expression>
+        <org.drools.workbench.models.datamodel.rule.CompositeFactPattern>
+          <type>not</type>
+          <patterns>
+            <org.drools.workbench.models.datamodel.rule.FactPattern>
+              <factType>AccountHasBeenAssigned</factType>
+              <isNegated>false</isNegated>
+              <window>
                 <parameters/>
-                <factType>AccountHolder</factType>
-                <fieldName>LIST_1</fieldName>
-                <fieldType>String</fieldType>
-              </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-            </constraints>
-          </constraintList>
-          <factType>AccountHolder</factType>
-          <isNegated>false</isNegated>
-          <window>
-            <parameters/>
-          </window>
-        </org.drools.workbench.models.datamodel.rule.FactPattern>
+              </window>
+            </org.drools.workbench.models.datamodel.rule.FactPattern>
+          </patterns>
+        </org.drools.workbench.models.datamodel.rule.CompositeFactPattern>
       </definition>
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
