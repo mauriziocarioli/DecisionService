@@ -1,0 +1,14 @@
+package com.toyota.tfs.decisionservice;
+
+rule "Late Stage 3"
+	dialect "mvel"
+	when
+		a : AccountHolder( currentStage == "Late" , rflag != "R" , BALANCE >= 1500 , LIST_1 > "1587" , LIST_1 < "1750" )
+		h : Helper( )
+	then
+		System.out.println("===> DecisionService: firing rule "+drools.getRule().getName());
+		modify( a ) {
+				setLIST_1( h.randomListID("1550","1587","1750","1795") )
+		}
+		insertLogical( new AccountHasBeenAssigned() );
+end
