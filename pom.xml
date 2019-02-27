@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.toyota.tfs</groupId>
   <artifactId>DecisionService</artifactId>
-  <version>1.0.10-CR1</version>
+  <version>1.0.11-CR2</version>
   <packaging>kjar</packaging>
   <name>DecisionService</name>
   <description>Decision Engine demo for Toyota Financial Services</description>
