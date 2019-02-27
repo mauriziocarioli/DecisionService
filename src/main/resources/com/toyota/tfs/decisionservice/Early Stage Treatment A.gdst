@@ -88,7 +88,7 @@
       <header>log</header>
       <definition>
         <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>System.out.println(&quot;===&gt; DecisionService: firing rule &quot;+drools.getRule().getName());</text>
+          <text>System.out.println(&quot;===&gt; DecisionService: firing rule &quot;+drools.getRule().getName()+&quot;, ID=&quot;+a.getID());</text>
         </org.drools.workbench.models.datamodel.rule.FreeFormLine>
       </definition>
       <childColumns>
