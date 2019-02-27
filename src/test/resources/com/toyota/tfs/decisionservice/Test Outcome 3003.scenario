@@ -11,6 +11,21 @@
           <value>11</value>
           <nature>4</nature>
         </field-data>
+        <field-data>
+          <name>aflag</name>
+          <value>N</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>eflag</name>
+          <value>N</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>nflag</name>
+          <value>N</value>
+          <nature>4</nature>
+        </field-data>
       </fieldData>
       <name>a</name>
       <isModify>false</isModify>
@@ -26,7 +41,7 @@
           <fieldName>LIST_1</fieldName>
           <expected>3003</expected>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>a</name>
