@@ -2,6 +2,7 @@ package com.toyota.tfs.decisionservice;
 
 rule "Late Stage 1"
 	dialect "mvel"
+	ruleflow-group "treatment"
 	when
 		a : AccountHolder( currentStage == "Late" , rflag != "R" , BALANCE >= 1500 , LIST_1 < "1550" )
 		h : Helper( )
