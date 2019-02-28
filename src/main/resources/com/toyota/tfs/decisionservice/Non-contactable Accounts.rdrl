@@ -2,6 +2,7 @@ package com.toyota.tfs.decisionservice;
 
 rule "Non-contactable Accounts"
 	dialect "mvel"
+	ruleflow-group "donotcontact"
 	when
 		account : AccountHolder( aflag == "Y" || nflag == "Y" || eflag == "Y" || NO_CONTACT == "Y" || sflag == "Y" || bad_Number == "Y" || DAFlag == "Y" )
 	then
