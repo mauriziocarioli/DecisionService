@@ -11,5 +11,5 @@ rule "Set Early Stage"
 				setCurrentStage( "Early" )
 		}
 		insert( new EarlyStageIsSet() );
-		System.out.println("===> FQHC-Pricing: firing rule "+drools.getRule().getName());
+		System.out.println("===> DecisionService: firing rule "+drools.getRule().getName()+", ID="+a.getID());
 end
