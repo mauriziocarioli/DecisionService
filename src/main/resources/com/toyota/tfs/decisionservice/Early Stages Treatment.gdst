@@ -194,7 +194,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>treatment</valueString>
+        <valueString>ea</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
