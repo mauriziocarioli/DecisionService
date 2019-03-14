@@ -239,7 +239,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>treatment</valueString>
+        <valueString>remaining</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -297,7 +297,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>treatment</valueString>
+        <valueString>remaining</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -359,7 +359,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>treatment</valueString>
+        <valueString>remaining</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -421,7 +421,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>treatment</valueString>
+        <valueString>remaining</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
