@@ -1,0 +1,15 @@
+package com.toyota.tfs.decisionservice;
+
+import java.lang.Number;
+
+rule "Set Late Stage"
+	dialect "mvel"
+	when
+		a : AccountHolder( daysDelinquent >= 12 && daysDelinquent <= 45 )
+	then
+		modify( a ) {
+				setCurrentStage( "Early" )
+		}
+		insert( new EarlyStageIsSet() );
+		System.out.println("===> DecisionService: firing rule "+drools.getRule().getName()+", ID="+a.getID());
+end
