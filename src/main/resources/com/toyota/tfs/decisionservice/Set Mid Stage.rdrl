@@ -1,0 +1,11 @@
+package com.toyota.tfs.decisionservice;
+
+import java.lang.Number;
+
+rule "Set Mid Stage"
+	dialect "mvel"
+	when
+		AccountHolder( daysDelinquent >= 12 && daysDelinquent <= 45 )
+	then
+		insert( new EarlyStageIsSet() );
+end
