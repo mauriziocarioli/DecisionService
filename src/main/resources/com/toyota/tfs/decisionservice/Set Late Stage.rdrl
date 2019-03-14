@@ -5,11 +5,11 @@ import java.lang.Number;
 rule "Set Late Stage"
 	dialect "mvel"
 	when
-		a : AccountHolder( daysDelinquent >= 12 && daysDelinquent <= 45 )
+		a : AccountHolder( daysDelinquent >= 90 )
 	then
 		modify( a ) {
-				setCurrentStage( "Early" )
+				setCurrentStage( "Late" )
 		}
-		insert( new EarlyStageIsSet() );
+		insert( new LateStageIsSet() );
 		System.out.println("===> DecisionService: firing rule "+drools.getRule().getName()+", ID="+a.getID());
 end
