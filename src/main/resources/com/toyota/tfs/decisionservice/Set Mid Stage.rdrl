@@ -5,7 +5,7 @@ import java.lang.Number;
 rule "Set Mid Stage"
 	dialect "mvel"
 	when
-		AccountHolder( daysDelinquent >= 12 && daysDelinquent <= 45 )
+		AccountHolder( daysDelinquent >= 46 && daysDelinquent <= 89 )
 	then
-		insert( new EarlyStageIsSet() );
+		insert( new MidStageIsSet() );
 end
