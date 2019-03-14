@@ -4,7 +4,6 @@ import java.lang.Number;
 
 rule "Do Not Contact is not set"
 	dialect "mvel"
-	ruleflow-group "treatment"
 	when
 		not (DoNotContact( )) 
 	then
