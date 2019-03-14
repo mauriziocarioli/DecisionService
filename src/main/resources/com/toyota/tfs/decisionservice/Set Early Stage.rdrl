@@ -5,7 +5,11 @@ import java.lang.Number;
 rule "Set Early Stage"
 	dialect "mvel"
 	when
-		AccountHolder( daysDelinquent >= 12 && daysDelinquent <= 45 )
+		a : AccountHolder( daysDelinquent >= 12 && daysDelinquent <= 45 )
 	then
+		modify( a ) {
+				setCurrentStage( "Early" )
+		}
 		insert( new EarlyStageIsSet() );
+		System.out.println("===> FQHC-Pricing: firing rule "+drools.getRule().getName());
 end
