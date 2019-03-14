@@ -5,6 +5,7 @@ import java.lang.Number;
 rule "Set Early Stage"
 	dialect "mvel"
 	when
-		AccountHolder( )
+		AccountHolder( daysDelinquent >= 12 && daysDelinquent <= 45 )
 	then
+		insert( new EarlyStageIsSet() );
 end
