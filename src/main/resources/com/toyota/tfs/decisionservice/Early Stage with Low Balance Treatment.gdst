@@ -151,7 +151,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>treatment</valueString>
+        <valueString>earlystage</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
