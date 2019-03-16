@@ -5,5 +5,9 @@ import java.lang.Number;
 rule "Start Treatment Audit"
 	dialect "mvel"
 	when
+		a : AccountHolder( ID : ID != null )
 	then
+		modify( a ) {
+				setTreatmentAudit( ID )
+		}
 end
