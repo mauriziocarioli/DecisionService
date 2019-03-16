@@ -128,7 +128,7 @@
       <update>true</update>
     </set-field-col52>
     <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
-      <hideColumn>false</hideColumn>
+      <hideColumn>true</hideColumn>
       <width>-1</width>
       <header>log</header>
       <definition>
@@ -138,9 +138,36 @@
       </definition>
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-          <hideColumn>false</hideColumn>
+          <hideColumn>true</hideColumn>
           <width>100</width>
           <header>log</header>
+          <varName></varName>
+          <fieldType>Boolean</fieldType>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+      </childColumns>
+    </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
+    <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
+      <hideColumn>true</hideColumn>
+      <width>-1</width>
+      <header>audit</header>
+      <definition>
+        <org.drools.workbench.models.datamodel.rule.ActionUpdateField>
+          <fieldValues>
+            <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
+              <field>treatmentAudit</field>
+              <value>drools.getRule().getName()</value>
+              <nature>3</nature>
+              <type>String</type>
+            </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
+          </fieldValues>
+          <variable>a</variable>
+        </org.drools.workbench.models.datamodel.rule.ActionUpdateField>
+      </definition>
+      <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+          <hideColumn>true</hideColumn>
+          <width>100</width>
+          <header>audit</header>
           <varName></varName>
           <fieldType>Boolean</fieldType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
@@ -184,6 +211,7 @@
     <list>
       <value>
         <valueNumeric class="int">1</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -231,10 +259,17 @@
         <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
     </list>
     <list>
       <value>
         <valueNumeric class="int">2</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -282,10 +317,17 @@
         <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
     </list>
     <list>
       <value>
         <valueNumeric class="int">3</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -333,10 +375,17 @@
         <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
     </list>
     <list>
       <value>
         <valueNumeric class="int">4</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -384,10 +433,17 @@
         <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
     </list>
     <list>
       <value>
         <valueNumeric class="int">5</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -435,10 +491,17 @@
         <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
     </list>
     <list>
       <value>
         <valueNumeric class="int">6</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -486,10 +549,17 @@
         <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
     </list>
     <list>
       <value>
         <valueNumeric class="int">7</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -529,6 +599,12 @@
       <value>
         <valueString>B</valueString>
         <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
