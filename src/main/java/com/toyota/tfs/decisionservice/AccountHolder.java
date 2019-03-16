@@ -15,6 +15,8 @@ public class AccountHolder {
 	private int splitIndex;
 	private String errorMessage;
 
+	private java.lang.String treatmentAudit;
+
 	// These getters and members added by me to cover the rules -- goes down to
 	// next comment
 	public String getCallList() {
@@ -1795,6 +1797,14 @@ public class AccountHolder {
 
 	public void setSkip_ID(java.lang.Integer skip_ID) {
 		this.skip_ID = skip_ID;
+	}
+
+	public java.lang.String getTreatmentAudit() {
+		return this.treatmentAudit;
+	}
+
+	public void setTreatmentAudit(java.lang.String treatmentAudit) {
+		this.treatmentAudit = treatmentAudit;
 	}
 
 }
