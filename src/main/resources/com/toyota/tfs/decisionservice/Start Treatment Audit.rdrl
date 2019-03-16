@@ -1,0 +1,9 @@
+package com.toyota.tfs.decisionservice;
+
+import java.lang.Number;
+
+rule "Start Treatment Audit"
+	dialect "mvel"
+	when
+	then
+end
