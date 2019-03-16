@@ -7,9 +7,10 @@ rule "Set Late Stage"
 	when
 		a : AccountHolder( daysDelinquent >= 90 )
 	then
+		System.out.println("===> DecisionService: firing rule "+drools.getRule().getName()+", ID="+a.getID());
 		modify( a ) {
-				setCurrentStage( "Late" )
+				setCurrentStage( "Late" ), 
+				setTreatmentAudit( drools.getRule().getName() )
 		}
 		insert( new LateStageIsSet() );
-		System.out.println("===> DecisionService: firing rule "+drools.getRule().getName()+", ID="+a.getID());
 end
