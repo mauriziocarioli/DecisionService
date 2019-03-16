@@ -7,9 +7,10 @@ rule "Set Early Stage"
 	when
 		a : AccountHolder( daysDelinquent >= 12 && daysDelinquent <= 45 )
 	then
+		System.out.println("===> DecisionService: firing rule "+drools.getRule().getName()+", ID="+a.getID());
 		modify( a ) {
-				setCurrentStage( "Early" )
+				setCurrentStage( "Early" ), 
+				setTreatmentAudit( drools.getRule().getName() )
 		}
 		insert( new EarlyStageIsSet() );
-		System.out.println("===> DecisionService: firing rule "+drools.getRule().getName()+", ID="+a.getID());
 end
