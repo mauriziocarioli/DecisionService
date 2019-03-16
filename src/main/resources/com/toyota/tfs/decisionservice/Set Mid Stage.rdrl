@@ -7,9 +7,10 @@ rule "Set Mid Stage"
 	when
 		a : AccountHolder( daysDelinquent >= 46 && daysDelinquent <= 89 )
 	then
+		System.out.println("===> DecisionService: firing rule "+drools.getRule().getName()+", ID="+a.getID());
 		modify( a ) {
-				setCurrentStage( "Mid" )
+				setCurrentStage( "Mid" ), 
+				setTreatmentAudit( drools.getRule().getName() )
 		}
 		insert( new MidStageIsSet() );
-		System.out.println("===> DecisionService: firing rule "+drools.getRule().getName()+", ID="+a.getID());
 end
