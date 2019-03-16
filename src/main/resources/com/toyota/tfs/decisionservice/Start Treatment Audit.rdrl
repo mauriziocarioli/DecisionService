@@ -4,6 +4,7 @@ import java.lang.Number;
 
 rule "Start Treatment Audit"
 	dialect "mvel"
+	ruleflow-group "audit"
 	when
 		a : AccountHolder( ID : ID != null )
 	then
