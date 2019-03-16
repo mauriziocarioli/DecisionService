@@ -1,0 +1,24 @@
+<org.uberfire.java.nio.base.Properties serialization="custom">
+  <unserializable-parents/>
+  <map>
+    <default>
+      <loadFactor>0.75</loadFactor>
+      <threshold>12</threshold>
+    </default>
+    <int>16</int>
+    <int>1</int>
+    <string>dcore.description[0]</string>
+    <string>SLIDE 17
+Late stage accounts are assigned Ownership treatment by assigning them in lists (ListID 1750 - 1795 and ListID 1550-1587)
+Rule 1: Late Stage accounts to be considered are: 
+Accounts that are not RFlag = R
+Balance is &gt;= 1500
+Rule 2: Accounts already marked with late stage lists should not be updated
+Rule 3: New late stage accounts are to be:
+Randomly load balanced and assigned into list IDs 1750 - 1795 and list 1550 - 1587
+SLIDE 18
+Accounts satisfying the above conditions are  tagged as late stage, once an account has been tagged these accounts should not move out from assigned list for next subsequent days, till the account  is cured by an agent.
+To retain an account in the same list, accounts are round ?tripped from  its  previous assigned List, and back into the Same list.
+</string>
+  </map>
+</org.uberfire.java.nio.base.Properties>
