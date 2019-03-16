@@ -10,4 +10,5 @@ rule "Start Treatment Audit"
 		modify( a ) {
 				setTreatmentAudit( ID )
 		}
+		System.out.println("===> DecisionService: firing rule "+drools.getRule().getName()+", ID="+a.getID());
 end
