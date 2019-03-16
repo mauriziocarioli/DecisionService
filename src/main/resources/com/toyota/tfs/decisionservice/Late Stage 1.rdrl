@@ -12,5 +12,5 @@ rule "Late Stage 1"
 				setLIST_1( h.randomListID("1550","1587","1750","1795") )
 		}
 		insertLogical( new AccountHasBeenAssigned() );
-		modify(a) {addTreatmentAudit(drools.getRule().getName())}
+		modify( a ) { addTreatmentAudit( drools.getRule().getName() ) }
 end
