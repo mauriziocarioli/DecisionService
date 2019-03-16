@@ -9,8 +9,8 @@ rule "Late Stage 3"
 	then
 		System.out.println("===> DecisionService: firing rule "+drools.getRule().getName()+", ID="+a.getID());
 		modify( a ) {
-				setLIST_1( h.randomListID("1550","1587","1750","1795") )
+				setLIST_1( h.randomListID("1550","1587","1750","1795") ), 
+				setTreatmentAudit( "drools.getRule().getName()" )
 		}
 		insertLogical( new AccountHasBeenAssigned() );
-		modify( a ) { addTreatmentAudit( drools.getRule().getName() ) }
 end
