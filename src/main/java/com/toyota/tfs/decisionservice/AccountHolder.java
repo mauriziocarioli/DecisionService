@@ -1804,6 +1804,7 @@ public class AccountHolder {
 	}
 
 	public void setTreatmentAudit(java.lang.String treatmentAudit) {
+	    if (this.treatmentAudit == null) this.treatmentAudit = "";
 		this.treatmentAudit = this.treatmentAudit.concat("|").concat(treatmentAudit);
 	}
 	
