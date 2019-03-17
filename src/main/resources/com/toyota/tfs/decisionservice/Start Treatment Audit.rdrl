@@ -9,7 +9,7 @@ rule "Start Treatment Audit"
 		a : AccountHolder( ID : ID != null )
 	then
 		modify( a ) {
-				setTreatmentAudit( ID )
+				setTreatmentAudit( a.getID() )
 		}
 		System.out.println("===> DecisionService: firing rule "+drools.getRule().getName()+", ID="+a.getID());
 end
